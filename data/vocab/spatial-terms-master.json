@@ -1,0 +1,222 @@
+[
+  {
+    "term_id": "north",
+    "term": "north",
+    "category": "cardinal_direction",
+    "subtype": "absolute_direction",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "south",
+    "term": "south",
+    "category": "cardinal_direction",
+    "subtype": "absolute_direction",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "east",
+    "term": "east",
+    "category": "cardinal_direction",
+    "subtype": "absolute_direction",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "west",
+    "term": "west",
+    "category": "cardinal_direction",
+    "subtype": "absolute_direction",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "northward",
+    "term": "northward",
+    "category": "directional_suffix",
+    "subtype": "regional_direction",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": "Often functions as a region descriptor as well as direction."
+  },
+  {
+    "term_id": "southward",
+    "term": "southward",
+    "category": "directional_suffix",
+    "subtype": "regional_direction",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": "Often functions as a region descriptor as well as direction."
+  },
+  {
+    "term_id": "up",
+    "term": "up",
+    "category": "ambiguous_directional",
+    "subtype": "vertical_or_directional",
+    "toggle_group": "up_down_mode",
+    "possible_modes": ["direction", "elevation", "exclude"],
+    "default_mode": "unresolved",
+    "notes": "Evidence term, not a fixed claim type."
+  },
+  {
+    "term_id": "down",
+    "term": "down",
+    "category": "ambiguous_directional",
+    "subtype": "vertical_or_directional",
+    "toggle_group": "up_down_mode",
+    "possible_modes": ["direction", "elevation", "exclude"],
+    "default_mode": "unresolved",
+    "notes": "Evidence term, not a fixed claim type."
+  },
+  {
+    "term_id": "from",
+    "term": "from",
+    "category": "movement_connector",
+    "subtype": "origin_marker",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "to",
+    "term": "to",
+    "category": "movement_connector",
+    "subtype": "destination_marker",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "into",
+    "term": "into",
+    "category": "movement_connector",
+    "subtype": "destination_marker",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "by",
+    "term": "by",
+    "category": "proximity_indicator",
+    "subtype": "adjacency_marker",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "between",
+    "term": "between",
+    "category": "adjacency_indicator",
+    "subtype": "intermediate_relation",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "borders",
+    "term": "borders",
+    "category": "border_indicator",
+    "subtype": "shared_boundary",
+    "toggle_group": "border_claims_mode",
+    "possible_modes": ["include", "exclude"],
+    "default_mode": "include",
+    "notes": ""
+  },
+  {
+    "term_id": "bordered",
+    "term": "bordered",
+    "category": "border_indicator",
+    "subtype": "shared_boundary",
+    "toggle_group": "border_claims_mode",
+    "possible_modes": ["include", "exclude"],
+    "default_mode": "include",
+    "notes": ""
+  },
+  {
+    "term_id": "surrounded",
+    "term": "surrounded",
+    "category": "containment_indicator",
+    "subtype": "encirclement_relation",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": "Needs cautious use in graph logic."
+  },
+  {
+    "term_id": "journey",
+    "term": "journey",
+    "category": "route_indicator",
+    "subtype": "distance_or_travel",
+    "toggle_group": "travel_edges_mode",
+    "possible_modes": ["include", "exclude"],
+    "default_mode": "include",
+    "notes": ""
+  },
+  {
+    "term_id": "pass",
+    "term": "pass",
+    "category": "route_indicator",
+    "subtype": "corridor_or_gateway",
+    "toggle_group": "travel_edges_mode",
+    "possible_modes": ["include", "exclude"],
+    "default_mode": "include",
+    "notes": ""
+  },
+  {
+    "term_id": "across",
+    "term": "across",
+    "category": "movement_connector",
+    "subtype": "crossing_relation",
+    "toggle_group": "travel_edges_mode",
+    "possible_modes": ["include", "exclude"],
+    "default_mode": "include",
+    "notes": "Useful for river-crossing logic."
+  },
+  {
+    "term_id": "toward",
+    "term": "toward",
+    "category": "movement_connector",
+    "subtype": "directional_destination_marker",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  },
+  {
+    "term_id": "through",
+    "term": "through",
+    "category": "route_indicator",
+    "subtype": "intermediate_route_marker",
+    "toggle_group": "travel_edges_mode",
+    "possible_modes": ["include", "exclude"],
+    "default_mode": "include",
+    "notes": ""
+  },
+  {
+    "term_id": "away_from",
+    "term": "away from",
+    "category": "movement_connector",
+    "subtype": "origin_separation_marker",
+    "toggle_group": null,
+    "possible_modes": [],
+    "default_mode": "active",
+    "notes": ""
+  }
+]

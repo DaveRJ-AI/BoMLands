@@ -1,0 +1,1102 @@
+{
+  "event_steps": [
+    {
+      "event_step_id": "lehite_old_world_journey_step_01",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 1,
+      "reference_id": "1_nephi_2_8_10",
+      "from_location_id": "house_lehi_jerusalem",
+      "to_location_id": "valley_lemuel",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["down", "south"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Departure from Lehi's house to the first major encampment at the Valley of Lemuel."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_02",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 2,
+      "reference_id": "1_nephi_2_8_10",
+      "from_location_id": "valley_lemuel",
+      "to_location_id": "river_laman",
+      "step_type": "encampment",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "River Laman is part of the Valley of Lemuel encampment complex."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_03",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 3,
+      "reference_id": "1_nephi_3_11_13",
+      "from_location_id": "valley_lemuel",
+      "to_location_id": "house_laban_old_world",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["back"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "From the Valley of Lemuel the sons return to the Jerusalem area for the record of the Jews."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_04",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 4,
+      "reference_id": "1_nephi_3_21_26",
+      "from_location_id": "house_laban_old_world",
+      "to_location_id": "treasury_laban_old_world",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "The first return trip includes access to Laban's treasury."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_05",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 5,
+      "reference_id": "1_nephi_4_1_5",
+      "from_location_id": "treasury_laban_old_world",
+      "to_location_id": "valley_lemuel",
+      "step_type": "return",
+      "path_certainty": "high",
+      "direction_terms": ["back"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "The family returns with the brass plates to the Valley of Lemuel."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_06",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 6,
+      "reference_id": "1_nephi_7_2_5",
+      "from_location_id": "valley_lemuel",
+      "to_location_id": "house_ishmael_old_world",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["back"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "A second return trip is made from the Valley of Lemuel to bring Ishmael's household."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_07",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 7,
+      "reference_id": "1_nephi_7_2_5",
+      "from_location_id": "house_ishmael_old_world",
+      "to_location_id": "valley_lemuel",
+      "step_type": "return",
+      "path_certainty": "high",
+      "direction_terms": ["back"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Ishmael's household returns with the party to the Valley of Lemuel."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_08",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 8,
+      "reference_id": "1_nephi_16_13_14",
+      "from_location_id": "valley_lemuel",
+      "to_location_id": "place_shazer_old_world",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["south"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Southward travel resumes from the Valley of Lemuel to Shazer."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_09",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 9,
+      "reference_id": "1_nephi_16_13_14",
+      "from_location_id": "valley_lemuel",
+      "to_location_id": "place_shazer_old_world",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["south"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Southward travel resumes from the Valley of Lemuel to Shazer."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_10",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 10,
+      "reference_id": "1_nephi_16_17_18",
+      "from_location_id": "place_shazer_old_world",
+      "to_location_id": "broken_bow_camp_old_world",
+      "step_type": "travel",
+      "path_certainty": "medium",
+      "direction_terms": ["south"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Continuing wilderness travel leads to the broken bow episode."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_11",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 11,
+      "reference_id": "1_nephi_16_34",
+      "from_location_id": "broken_bow_camp_old_world",
+      "to_location_id": "place_nahom_old_world",
+      "step_type": "travel",
+      "path_certainty": "medium",
+      "direction_terms": ["south"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Nahom marks the major turn point in the Old World journey."
+    },
+    {
+      "event_step_id": "lehite_old_world_journey_step_12",
+      "event_id": "lehite_old_world_journey",
+      "step_order": 12,
+      "reference_id": "1_nephi_17_5_6",
+      "from_location_id": "place_nahom_old_world",
+      "to_location_id": "bountiful_old_world",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["east"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "After the turn eastward, the party reaches Bountiful by the sea."
+    },
+    {
+      "event_step_id": "alma_22_geography_frame_step_01",
+      "event_id": "alma_22_geography_frame",
+      "step_order": 1,
+      "reference_id": "alma_22_27",
+      "from_location_id": "east_sea",
+      "to_location_id": "manti_headwaters",
+      "step_type": "boundary_trace",
+      "path_certainty": "high",
+      "direction_terms": ["east", "south"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Represents the wilderness boundary strip from east sea to Sidon headwaters."
+    },
+    {
+      "event_step_id": "alma_22_geography_frame_step_02",
+      "event_id": "alma_22_geography_frame",
+      "step_order": 2,
+      "reference_id": "alma_22_29",
+      "from_location_id": "east_sea",
+      "to_location_id": "west_sea",
+      "step_type": "territorial_span",
+      "path_certainty": "high",
+      "direction_terms": ["east", "west"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Represents Bountiful spanning from east sea to west sea."
+    },
+    {
+      "event_step_id": "alma_22_geography_frame_step_03",
+      "event_id": "alma_22_geography_frame",
+      "step_order": 3,
+      "reference_id": "alma_22_29",
+      "from_location_id": "land_bountiful",
+      "to_location_id": "land_desolation",
+      "step_type": "border_transition",
+      "path_certainty": "high",
+      "direction_terms": ["northward"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Represents the Bountiful-Desolation gateway."
+    },
+    {
+      "event_step_id": "alma_22_geography_frame_step_04",
+      "event_id": "alma_22_geography_frame",
+      "step_order": 4,
+      "reference_id": "alma_22_31",
+      "from_location_id": "land_southward",
+      "to_location_id": "land_northward",
+      "step_type": "gateway_relation",
+      "path_certainty": "high",
+      "direction_terms": ["northward", "southward"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Represents the narrow neck relation between the two macro-regions."
+    },
+    {
+      "event_step_id": "alma_22_geography_frame_step_05",
+      "event_id": "alma_22_geography_frame",
+      "step_order": 5,
+      "reference_id": "alma_22_32",
+      "from_location_id": "east_sea",
+      "to_location_id": "west_sea",
+      "step_type": "distance_estimate",
+      "path_certainty": "medium",
+      "direction_terms": ["east", "west"],
+      "toggle_sensitivity": ["travel_edges_mode"],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Narrative width estimate of the narrow neck corridor."
+    },
+
+    {
+      "event_step_id": "mosiah_mission_step_01",
+      "event_id": "sons_of_mosiah_mission",
+      "step_order": 1,
+      "reference_id": "alma_17_6",
+      "from_location_id": "land_zarahemla",
+      "to_location_id": "land_nephi",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["up"],
+      "toggle_sensitivity": ["up_down_mode"],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Classic 'went up to the land of Nephi' passage—key for UP/DOWN toggle testing."
+    },
+    {
+      "event_step_id": "mosiah_mission_step_02",
+      "event_id": "sons_of_mosiah_mission",
+      "step_order": 2,
+      "reference_id": "alma_17_6",
+      "from_location_id": "land_nephi",
+      "to_location_id": "lamanite_regions_general",
+      "step_type": "dispersion",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Missionaries separate to preach among different Lamanite groups."
+    },
+    {
+      "event_step_id": "mosiah_mission_step_03",
+      "event_id": "sons_of_mosiah_mission",
+      "step_order": 3,
+      "reference_id": "alma_17_20",
+      "from_location_id": "lamanite_regions_general",
+      "to_location_id": "land_ishmael",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Ammon enters the land of Ishmael."
+    },
+    {
+      "event_step_id": "mosiah_mission_step_04",
+      "event_id": "sons_of_mosiah_mission",
+      "step_order": 4,
+      "reference_id": "alma_21_1",
+      "from_location_id": "lamanite_regions_general",
+      "to_location_id": "city_jerusalem",
+      "step_type": "travel",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Aaron and companions go to Jerusalem (Lamanite city)."
+    },
+    {
+      "event_step_id": "mosiah_mission_step_05",
+      "event_id": "sons_of_mosiah_mission",
+      "step_order": 5,
+      "reference_id": "alma_21_11",
+      "from_location_id": "city_jerusalem",
+      "to_location_id": "land_midoni",
+      "step_type": "travel",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Movement toward Midoni after imprisonment."
+    },
+    {
+      "event_step_id": "mosiah_mission_step_06",
+      "event_id": "sons_of_mosiah_mission",
+      "step_order": 6,
+      "reference_id": "alma_21_11",
+      "from_location_id": "land_midoni",
+      "to_location_id": "land_nephi",
+      "step_type": "travel",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Aaron later appears before the king in land of Nephi."
+    },
+    {
+      "event_step_id": "mosiah_mission_step_07",
+      "event_id": "sons_of_mosiah_mission",
+      "step_order": 7,
+      "reference_id": "alma_26_1",
+      "from_location_id": "land_nephi",
+      "to_location_id": "land_zarahemla",
+      "step_type": "return",
+      "path_certainty": "medium",
+      "direction_terms": ["down"],
+      "toggle_sensitivity": ["up_down_mode"],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Missionaries return to Zarahemla—important for DOWN usage."
+    },
+    {
+      "event_step_id": "alma_melek_ammonihah_mission_step_01",
+      "event_id": "alma_melek_ammonihah_mission",
+      "step_order": 1,
+      "reference_id": "alma_8_3",
+      "from_location_id": "city_zarahemla",
+      "to_location_id": "land_melek",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Alma departs from Zarahemla and journeys into the land of Melek."
+    },
+    {
+      "event_step_id": "alma_melek_ammonihah_mission_step_02",
+      "event_id": "alma_melek_ammonihah_mission",
+      "step_order": 2,
+      "reference_id": "alma_8_4",
+      "from_location_id": "land_melek",
+      "to_location_id": "city_ammonihah",
+      "step_type": "travel",
+      "path_certainty": "high",
+      "direction_terms": ["north"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "From Melek, Alma travels north to Ammonihah."
+    },
+    {
+      "event_step_id": "alma_melek_ammonihah_mission_step_03",
+      "event_id": "alma_melek_ammonihah_mission",
+      "step_order": 3,
+      "reference_id": "alma_15_14",
+      "from_location_id": "city_ammonihah",
+      "to_location_id": "city_sidom",
+      "step_type": "travel",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "After the Ammonihah ordeal, Alma and Amulek's ministry is represented at Sidom."
+    },
+    {
+      "event_step_id": "alma_melek_ammonihah_mission_step_04",
+      "event_id": "alma_melek_ammonihah_mission",
+      "step_order": 4,
+      "reference_id": "alma_15_17",
+      "from_location_id": "city_sidom",
+      "to_location_id": "city_zarahemla",
+      "step_type": "return",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Alma and Amulek return from Sidom to the city of Zarahemla."
+    },
+
+    {
+      "event_step_id": "zoramite_war_step_01",
+      "event_id": "zoramite_war_campaigns",
+      "step_order": 1,
+      "reference_id": "alma_43_4",
+      "from_location_id": "antionum_region",
+      "to_location_id": "land_jershon",
+      "step_type": "threat_projection",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Zoramite-Lamanite pressure toward Jershon."
+    },
+    {
+      "event_step_id": "zoramite_war_step_02",
+      "event_id": "zoramite_war_campaigns",
+      "step_order": 2,
+      "reference_id": "alma_43_22",
+      "from_location_id": "land_jershon",
+      "to_location_id": "wilderness_south_sidon",
+      "step_type": "defensive_redeployment",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Moroni shifts defense southward into wilderness corridor."
+    },
+    {
+      "event_step_id": "zoramite_war_step_03",
+      "event_id": "zoramite_war_campaigns",
+      "step_order": 3,
+      "reference_id": "alma_43_27",
+      "from_location_id": "wilderness_south_sidon",
+      "to_location_id": "river_sidon_crossing_zone",
+      "step_type": "battle_movement",
+      "path_certainty": "high",
+      "direction_terms": ["across"],
+      "toggle_sensitivity": ["travel_edges_mode"],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Battle and pursuit near crossing logic around Sidon."
+    },
+    {
+      "event_step_id": "zoramite_war_step_04",
+      "event_id": "zoramite_war_campaigns",
+      "step_order": 4,
+      "reference_id": "alma_44_22",
+      "from_location_id": "river_sidon_crossing_zone",
+      "to_location_id": "land_manti",
+      "step_type": "retreat_or_escape",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Survivors flee toward southern lands."
+    },
+
+    {
+      "event_step_id": "amalickiah_east_step_01",
+      "event_id": "amalickiah_east_coast_campaign",
+      "step_order": 1,
+      "reference_id": "alma_48_2",
+      "from_location_id": "city_nephihah",
+      "to_location_id": "city_lehi",
+      "step_type": "fortification_chain",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "East-coast defense line."
+    },
+    {
+      "event_step_id": "amalickiah_east_step_02",
+      "event_id": "amalickiah_east_coast_campaign",
+      "step_order": 2,
+      "reference_id": "alma_50_13",
+      "from_location_id": "city_lehi",
+      "to_location_id": "city_morianton",
+      "step_type": "fortification_chain",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Fortified city sequence continues northward."
+    },
+    {
+      "event_step_id": "amalickiah_east_step_03",
+      "event_id": "amalickiah_east_coast_campaign",
+      "step_order": 3,
+      "reference_id": "alma_50_14",
+      "from_location_id": "city_morianton",
+      "to_location_id": "city_omner",
+      "step_type": "fortification_chain",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Northern extension of eastern city network."
+    },
+    {
+      "event_step_id": "amalickiah_east_step_04",
+      "event_id": "amalickiah_east_coast_campaign",
+      "step_order": 4,
+      "reference_id": "alma_50_14",
+      "from_location_id": "city_omner",
+      "to_location_id": "city_gid",
+      "step_type": "fortification_chain",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Linked city chain from Omner to Gid."
+    },
+    {
+      "event_step_id": "amalickiah_east_step_05",
+      "event_id": "amalickiah_east_coast_campaign",
+      "step_order": 5,
+      "reference_id": "alma_50_15",
+      "from_location_id": "city_gid",
+      "to_location_id": "city_mulek",
+      "step_type": "fortification_chain",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Eastern corridor reaches Mulek."
+    },
+
+    {
+      "event_step_id": "teancum_bountiful_step_01",
+      "event_id": "teancum_bountiful_campaign",
+      "step_order": 1,
+      "reference_id": "alma_51_28",
+      "from_location_id": "city_mulek",
+      "to_location_id": "land_bountiful",
+      "step_type": "rapid_march",
+      "path_certainty": "high",
+      "direction_terms": ["northward"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Teancum moves to intercept northern pressure."
+    },
+    {
+      "event_step_id": "teancum_bountiful_step_02",
+      "event_id": "teancum_bountiful_campaign",
+      "step_order": 2,
+      "reference_id": "alma_51_32",
+      "from_location_id": "land_bountiful",
+      "to_location_id": "bountiful_coastal_camp",
+      "step_type": "encampment",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Teancum camps near coast by Bountiful."
+    },
+    {
+      "event_step_id": "teancum_bountiful_step_03",
+      "event_id": "teancum_bountiful_campaign",
+      "step_order": 3,
+      "reference_id": "alma_52_9",
+      "from_location_id": "land_bountiful",
+      "to_location_id": "narrow_pass",
+      "step_type": "gateway_security",
+      "path_certainty": "high",
+      "direction_terms": ["northward"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Northern gateway secured through Bountiful."
+    },
+
+    {
+      "event_step_id": "east_recovery_step_01",
+      "event_id": "moroni_lehi_east_city_recovery",
+      "step_order": 1,
+      "reference_id": "alma_52_20",
+      "from_location_id": "city_mulek",
+      "to_location_id": "east_sea",
+      "step_type": "decoy_movement",
+      "path_certainty": "medium",
+      "direction_terms": ["east"],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Movement toward seashore used tactically."
+    },
+    {
+      "event_step_id": "east_recovery_step_02",
+      "event_id": "moroni_lehi_east_city_recovery",
+      "step_order": 2,
+      "reference_id": "alma_52_26",
+      "from_location_id": "city_mulek",
+      "to_location_id": "city_mulek",
+      "step_type": "city_recovery",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Recovery of Mulek through tactical encirclement."
+    },
+    {
+      "event_step_id": "east_recovery_step_03",
+      "event_id": "moroni_lehi_east_city_recovery",
+      "step_order": 3,
+      "reference_id": "alma_55_7",
+      "from_location_id": "city_gid",
+      "to_location_id": "city_gid",
+      "step_type": "prisoner_exchange_operation",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Strategic recovery operation in Gid."
+    },
+    {
+      "event_step_id": "east_recovery_step_04",
+      "event_id": "moroni_lehi_east_city_recovery",
+      "step_order": 4,
+      "reference_id": "alma_55_33",
+      "from_location_id": "city_nephihah",
+      "to_location_id": "city_nephihah",
+      "step_type": "city_loss",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Nephihah falls before later recovery focus."
+    },
+
+    {
+      "event_step_id": "helaman_antipus_step_01",
+      "event_id": "helaman_antipus_southern_campaign",
+      "step_order": 1,
+      "reference_id": "alma_56_14",
+      "from_location_id": "city_judea",
+      "to_location_id": "city_antiparah",
+      "step_type": "campaign_pressure",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Southern campaign arc begins."
+    },
+    {
+      "event_step_id": "helaman_antipus_step_02",
+      "event_id": "helaman_antipus_southern_campaign",
+      "step_order": 2,
+      "reference_id": "alma_56_31",
+      "from_location_id": "city_antiparah",
+      "to_location_id": "southern_wilderness_route",
+      "step_type": "decoy_retreat",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": ["travel_edges_mode"],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Helaman's youth lure enemy into wilderness pursuit."
+    },
+    {
+      "event_step_id": "helaman_antipus_step_03",
+      "event_id": "helaman_antipus_southern_campaign",
+      "step_order": 3,
+      "reference_id": "alma_57_18",
+      "from_location_id": "city_antiparah",
+      "to_location_id": "city_cumeni",
+      "step_type": "advance_and_capture",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Shift from Antiparah theater toward Cumeni."
+    },
+    {
+      "event_step_id": "helaman_antipus_step_04",
+      "event_id": "helaman_antipus_southern_campaign",
+      "step_order": 4,
+      "reference_id": "alma_58_13",
+      "from_location_id": "city_cumeni",
+      "to_location_id": "land_manti",
+      "step_type": "advance_and_capture",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Campaign culminates in Manti recovery."
+    },
+
+    {
+      "event_step_id": "helaman_young_sons_step_01",
+      "event_id": "helaman_young_sons_campaign",
+      "step_order": 1,
+      "reference_id": "alma_56_9",
+      "from_location_id": "land_zarahemla",
+      "to_location_id": "city_judea",
+      "step_type": "reinforcement_march",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Helaman marches at the head of the two thousand young sons to the city of Judea."
+    },
+    {
+      "event_step_id": "helaman_young_sons_step_02",
+      "event_id": "helaman_young_sons_campaign",
+      "step_order": 2,
+      "reference_id": "alma_56_14_city_manti",
+      "from_location_id": "city_judea",
+      "to_location_id": "city_manti",
+      "step_type": "theater_orientation",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "From Judea, the southern theater is framed by the possession list beginning with Manti."
+    },
+    {
+      "event_step_id": "helaman_young_sons_step_03",
+      "event_id": "helaman_young_sons_campaign",
+      "step_order": 3,
+      "reference_id": "alma_56_13_14",
+      "from_location_id": "city_manti",
+      "to_location_id": "city_zeezrom",
+      "step_type": "theater_orientation",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Helaman's summary names Zeezrom immediately alongside Manti in the occupied southern cities."
+    },
+    {
+      "event_step_id": "helaman_young_sons_step_04",
+      "event_id": "helaman_young_sons_campaign",
+      "step_order": 4,
+      "reference_id": "alma_56_13_14",
+      "from_location_id": "city_zeezrom",
+      "to_location_id": "city_cumeni",
+      "step_type": "theater_orientation",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Cumeni is part of the same occupied-city sequence Helaman uses to frame the campaign."
+    },
+    {
+      "event_step_id": "helaman_young_sons_step_05",
+      "event_id": "helaman_young_sons_campaign",
+      "step_order": 5,
+      "reference_id": "alma_56_13_14",
+      "from_location_id": "city_cumeni",
+      "to_location_id": "city_antiparah",
+      "step_type": "theater_orientation",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Antiparah closes the initial southern city sequence Helaman reports."
+    },
+
+    {
+      "event_step_id": "zarahemla_internal_step_01",
+      "event_id": "moroni_pahoran_zarahemla_campaign",
+      "step_order": 1,
+      "reference_id": "alma_61_14",
+      "from_location_id": "land_gideon",
+      "to_location_id": "land_zarahemla",
+      "step_type": "internal_redeployment",
+      "path_certainty": "medium",
+      "direction_terms": ["down"],
+      "toggle_sensitivity": ["up_down_mode"],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Moroni and Pahoran move toward Zarahemla."
+    },
+    {
+      "event_step_id": "zarahemla_internal_step_02",
+      "event_id": "moroni_pahoran_zarahemla_campaign",
+      "step_order": 2,
+      "reference_id": "alma_62_7",
+      "from_location_id": "land_zarahemla",
+      "to_location_id": "city_nephihah",
+      "step_type": "external_redeployment",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "After Zarahemla stabilization, campaign returns eastward."
+    }
+    ,
+    {
+      "event_step_id": "three_nephi_destruction_step_01",
+      "event_id": "three_nephi_destruction",
+      "step_order": 1,
+      "reference_id": "3_nephi_8_8",
+      "from_location_id": "city_zarahemla_destruction",
+      "to_location_id": "destruction_cataclysm_zone",
+      "step_type": "destruction_marker",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["destruction"],
+        "primary_period": "destruction"
+      },
+      "notes": "Zarahemla destruction node."
+    },
+    {
+      "event_step_id": "three_nephi_destruction_step_02",
+      "event_id": "three_nephi_destruction",
+      "step_order": 2,
+      "reference_id": "3_nephi_8_9",
+      "from_location_id": "city_moroni_destruction",
+      "to_location_id": "great_deep_moroni",
+      "step_type": "terrain_transformation",
+      "path_certainty": "high",
+      "direction_terms": ["down"],
+      "toggle_sensitivity": ["up_down_mode"],
+      "chronology": {
+        "periods": ["destruction"],
+        "primary_period": "destruction"
+      },
+      "notes": "City-to-sea transformation."
+    },
+    {
+      "event_step_id": "three_nephi_destruction_step_03",
+      "event_id": "three_nephi_destruction",
+      "step_order": 3,
+      "reference_id": "3_nephi_8_10",
+      "from_location_id": "city_moronihah_destruction",
+      "to_location_id": "new_elevation_moronihah",
+      "step_type": "terrain_transformation",
+      "path_certainty": "high",
+      "direction_terms": ["up"],
+      "toggle_sensitivity": ["up_down_mode"],
+      "chronology": {
+        "periods": ["destruction"],
+        "primary_period": "destruction"
+      },
+      "notes": "City-to-elevation transformation."
+    },
+    {
+      "event_step_id": "three_nephi_destruction_step_04",
+      "event_id": "three_nephi_destruction",
+      "step_order": 4,
+      "reference_id": "3_nephi_8_12",
+      "from_location_id": "destruction_cataclysm_zone",
+      "to_location_id": "destruction_cataclysm_zone",
+      "step_type": "regional_transformation",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["destruction"],
+        "primary_period": "destruction"
+      },
+      "notes": "Macro-level geography change marker."
+    },
+    {
+      "event_step_id": "three_nephi_destruction_step_05",
+      "event_id": "three_nephi_destruction",
+      "step_order": 5,
+      "reference_id": "3_nephi_9_9",
+      "from_location_id": "city_jacobugath_destruction",
+      "to_location_id": "destruction_cataclysm_zone",
+      "step_type": "destruction_marker",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["destruction"],
+        "primary_period": "destruction"
+      },
+      "notes": "Additional destruction-site marker."
+    },
+
+    {
+      "event_step_id": "christ_ministry_bountiful_step_01",
+      "event_id": "christ_ministry_bountiful",
+      "step_order": 1,
+      "reference_id": "3_nephi_11_1",
+      "from_location_id": "land_bountiful",
+      "to_location_id": "temple_bountiful",
+      "step_type": "gathering",
+      "path_certainty": "high",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["post_christ"],
+        "primary_period": "post_christ"
+      },
+      "notes": "Gathering at the temple in Bountiful."
+    },
+    {
+      "event_step_id": "christ_ministry_bountiful_step_02",
+      "event_id": "christ_ministry_bountiful",
+      "step_order": 2,
+      "reference_id": "3_nephi_17_1",
+      "from_location_id": "temple_bountiful",
+      "to_location_id": "city_bountiful_post",
+      "step_type": "dispersal",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["post_christ"],
+        "primary_period": "post_christ"
+      },
+      "notes": "People return to their homes."
+    },
+    {
+      "event_step_id": "christ_ministry_bountiful_step_03",
+      "event_id": "christ_ministry_bountiful",
+      "step_order": 3,
+      "reference_id": "3_nephi_19_3",
+      "from_location_id": "city_bountiful_post",
+      "to_location_id": "land_bountiful",
+      "step_type": "broadcast_dispersal",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["post_christ"],
+        "primary_period": "post_christ"
+      },
+      "notes": "Witnesses spread abroad through the land."
+    },
+    {
+      "event_step_id": "christ_ministry_bountiful_step_04",
+      "event_id": "christ_ministry_bountiful",
+      "step_order": 4,
+      "reference_id": "3_nephi_20_14",
+      "from_location_id": "land_bountiful",
+      "to_location_id": "land_bountiful",
+      "step_type": "covenant_gathering_marker",
+      "path_certainty": "medium",
+      "direction_terms": [],
+      "toggle_sensitivity": [],
+      "chronology": {
+        "periods": ["post_christ"],
+        "primary_period": "post_christ"
+      },
+      "notes": "Territorial covenant-establishment marker."
+    }
+  ]
+}

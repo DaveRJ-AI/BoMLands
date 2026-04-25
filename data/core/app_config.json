@@ -1,0 +1,43 @@
+{
+  "dataset_version": "v2-chronology-aware",
+  "default_toggles": {
+    "up_down_mode": "exclude",
+    "city_land_mode": "separate",
+    "inference_mode": "explicit_plus_strong",
+    "unnamed_regions_mode": "include",
+    "natural_features_mode": "include",
+    "border_claims_mode": "include",
+    "travel_edges_mode": "include",
+    "event_overlay_mode": "none",
+    "campaign_render_mode": "sequence_only"
+  },
+  "default_chronology_selection": [
+    "pre_christ"
+  ],
+  "available_chronology_periods": [
+    "jaredite",
+    "pre_christ",
+    "destruction",
+    "post_christ"
+  ],
+  "chronology_labels": {
+    "jaredite": "Jaredites",
+    "pre_christ": "Pre-Christ Visit",
+    "destruction": "Destruction",
+    "post_christ": "Post-Christ Visit"
+  },
+  "map_rendering": {
+    "show_overlap_groups": true,
+    "show_period_status_badges": true,
+    "separate_overlapping_labels": true,
+    "stack_same_zone_periods": true,
+    "fade_nonselected_periods": false
+  },
+  "overlay_options": {
+    "missionary": true,
+    "military": true,
+    "migration": true,
+    "post_christ_ministry": true,
+    "cataclysm": true
+  }
+}

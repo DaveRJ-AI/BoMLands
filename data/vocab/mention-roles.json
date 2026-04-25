@@ -1,0 +1,18 @@
+[
+  "city",
+  "land",
+  "wilderness",
+  "river",
+  "sea",
+  "hill",
+  "valley",
+  "mount",
+  "border_region",
+  "route",
+  "pass",
+  "neck",
+  "coast",
+  "region",
+  "structure_landmark",
+  "unknown_geographic"
+]

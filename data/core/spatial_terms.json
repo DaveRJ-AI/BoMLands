@@ -1,0 +1,798 @@
+{
+  "spatial_terms": [
+    {
+      "term_id": "north",
+      "term": "north",
+      "category": "cardinal_direction",
+      "subtype": "absolute_direction",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "south",
+      "term": "south",
+      "category": "cardinal_direction",
+      "subtype": "absolute_direction",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "east",
+      "term": "east",
+      "category": "cardinal_direction",
+      "subtype": "absolute_direction",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "west",
+      "term": "west",
+      "category": "cardinal_direction",
+      "subtype": "absolute_direction",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "northward",
+      "term": "northward",
+      "category": "directional_suffix",
+      "subtype": "regional_direction",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": "Often functions as a region descriptor as well as direction."
+    },
+    {
+      "term_id": "southward",
+      "term": "southward",
+      "category": "directional_suffix",
+      "subtype": "regional_direction",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": "Often functions as a region descriptor as well as direction."
+    },
+    {
+      "term_id": "up",
+      "term": "up",
+      "category": "ambiguous_directional",
+      "subtype": "vertical_or_directional",
+      "toggle_group": "up_down_mode",
+      "possible_modes": [
+        "direction",
+        "elevation",
+        "exclude"
+      ],
+      "default_mode": "unresolved",
+      "notes": "Evidence term, not a fixed claim type."
+    },
+    {
+      "term_id": "down",
+      "term": "down",
+      "category": "ambiguous_directional",
+      "subtype": "vertical_or_directional",
+      "toggle_group": "up_down_mode",
+      "possible_modes": [
+        "direction",
+        "elevation",
+        "exclude"
+      ],
+      "default_mode": "unresolved",
+      "notes": "Evidence term, not a fixed claim type."
+    },
+    {
+      "term_id": "from",
+      "term": "from",
+      "category": "movement_connector",
+      "subtype": "origin_marker",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "to",
+      "term": "to",
+      "category": "movement_connector",
+      "subtype": "destination_marker",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "into",
+      "term": "into",
+      "category": "movement_connector",
+      "subtype": "destination_marker",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "by",
+      "term": "by",
+      "category": "proximity_indicator",
+      "subtype": "adjacency_marker",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "between",
+      "term": "between",
+      "category": "adjacency_indicator",
+      "subtype": "intermediate_relation",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "borders",
+      "term": "borders",
+      "category": "border_indicator",
+      "subtype": "shared_boundary",
+      "toggle_group": "border_claims_mode",
+      "possible_modes": [
+        "include",
+        "exclude"
+      ],
+      "default_mode": "include",
+      "notes": ""
+    },
+    {
+      "term_id": "bordered",
+      "term": "bordered",
+      "category": "border_indicator",
+      "subtype": "shared_boundary",
+      "toggle_group": "border_claims_mode",
+      "possible_modes": [
+        "include",
+        "exclude"
+      ],
+      "default_mode": "include",
+      "notes": ""
+    },
+    {
+      "term_id": "surrounded",
+      "term": "surrounded",
+      "category": "containment_indicator",
+      "subtype": "encirclement_relation",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": "Needs cautious use in graph logic."
+    },
+    {
+      "term_id": "journey",
+      "term": "journey",
+      "category": "route_indicator",
+      "subtype": "distance_or_travel",
+      "toggle_group": "travel_edges_mode",
+      "possible_modes": [
+        "include",
+        "exclude"
+      ],
+      "default_mode": "include",
+      "notes": ""
+    },
+    {
+      "term_id": "pass",
+      "term": "pass",
+      "category": "route_indicator",
+      "subtype": "corridor_or_gateway",
+      "toggle_group": "travel_edges_mode",
+      "possible_modes": [
+        "include",
+        "exclude"
+      ],
+      "default_mode": "include",
+      "notes": ""
+    },
+    {
+      "term_id": "across",
+      "term": "across",
+      "category": "movement_connector",
+      "subtype": "crossing_relation",
+      "toggle_group": "travel_edges_mode",
+      "possible_modes": [
+        "include",
+        "exclude"
+      ],
+      "default_mode": "include",
+      "notes": "Useful for river-crossing logic."
+    },
+    {
+      "term_id": "toward",
+      "term": "toward",
+      "category": "movement_connector",
+      "subtype": "directional_destination_marker",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "through",
+      "term": "through",
+      "category": "route_indicator",
+      "subtype": "intermediate_route_marker",
+      "toggle_group": "travel_edges_mode",
+      "possible_modes": [
+        "include",
+        "exclude"
+      ],
+      "default_mode": "include",
+      "notes": ""
+    },
+    {
+      "term_id": "away_from",
+      "term": "away from",
+      "category": "movement_connector",
+      "subtype": "origin_separation_marker",
+      "toggle_group": null,
+      "possible_modes": [],
+      "default_mode": "active",
+      "notes": ""
+    },
+    {
+      "term_id": "helaman_3_8_term_01",
+      "reference_id": "helaman_3_8",
+      "matched_text": "from",
+      "normalized_term": "from",
+      "term_type": "relation",
+      "notes": ""
+    },
+    {
+      "term_id": "helaman_3_8_term_02",
+      "reference_id": "helaman_3_8",
+      "matched_text": "to",
+      "normalized_term": "to",
+      "term_type": "relation",
+      "notes": ""
+    },
+    {
+      "term_id": "helaman_3_8_term_03",
+      "reference_id": "helaman_3_8",
+      "matched_text": "southward",
+      "normalized_term": "southward",
+      "term_type": "direction",
+      "notes": ""
+    },
+    {
+      "term_id": "helaman_3_8_term_04",
+      "reference_id": "helaman_3_8",
+      "matched_text": "northward",
+      "normalized_term": "northward",
+      "term_type": "direction",
+      "notes": ""
+    },
+    {
+      "term_id": "helaman_3_8_term_05",
+      "reference_id": "helaman_3_8",
+      "matched_text": "sea south",
+      "normalized_term": "sea_south",
+      "term_type": "named_descriptor",
+      "notes": "Proposed new location descriptor."
+    },
+    {
+      "term_id": "helaman_3_8_term_06",
+      "reference_id": "helaman_3_8",
+      "matched_text": "sea north",
+      "normalized_term": "sea_north",
+      "term_type": "named_descriptor",
+      "notes": "Proposed new location descriptor."
+    },
+    {
+      "term_id": "helaman_4_7_term_01",
+      "reference_id": "helaman_4_7",
+      "matched_text": "west sea",
+      "normalized_term": "west_sea",
+      "term_type": "location_reference",
+      "notes": ""
+    },
+    {
+      "term_id": "helaman_4_7_term_02",
+      "reference_id": "helaman_4_7",
+      "matched_text": "east",
+      "normalized_term": "east",
+      "term_type": "direction",
+      "notes": "Endpoint left unnormalized in this batch."
+    },
+    {
+      "term_id": "helaman_4_7_term_03",
+      "reference_id": "helaman_4_7",
+      "matched_text": "north country",
+      "normalized_term": "north_country",
+      "term_type": "named_descriptor",
+      "notes": "Proposed new defensive region descriptor."
+    },
+    {
+      "term_id": "term_alma_2_15_01",
+      "reference_id": "alma_2_15",
+      "term_text": "east of",
+      "term_category": "direction",
+      "normalized_value": "east_of"
+    },
+    {
+      "term_id": "term_alma_2_15_02",
+      "reference_id": "alma_2_15",
+      "term_text": "ran by",
+      "term_category": "relation",
+      "normalized_value": "adjacent_to"
+    },
+    {
+      "term_id": "term_alma_2_24_01",
+      "reference_id": "alma_2_24",
+      "term_text": "above",
+      "term_category": "direction",
+      "normalized_value": "above"
+    },
+    {
+      "term_id": "term_alma_2_24_02",
+      "reference_id": "alma_2_24",
+      "term_text": "in the course of",
+      "term_category": "relation",
+      "normalized_value": "in_course_of"
+    },
+    {
+      "term_id": "term_alma_2_27_35_01",
+      "reference_id": "alma_2_27_35",
+      "term_text": "crossing",
+      "term_category": "route",
+      "normalized_value": "crossing"
+    },
+    {
+      "term_id": "term_alma_2_27_35_02",
+      "reference_id": "alma_2_27_35",
+      "term_text": "west side",
+      "term_category": "direction",
+      "normalized_value": "west_side"
+    },
+    {
+      "term_id": "term_alma_6_7_8_01",
+      "reference_id": "alma_6_7_8",
+      "term_text": "east of",
+      "term_category": "direction",
+      "normalized_value": "east_of"
+    },
+    {
+      "term_id": "term_alma_16_7_01",
+      "reference_id": "alma_16_7",
+      "term_text": "east side",
+      "term_category": "direction",
+      "normalized_value": "east_side"
+    },
+    {
+      "term_id": "term_alma_50_7_11_01",
+      "reference_id": "alma_50_7_11",
+      "term_text": "between",
+      "term_category": "border",
+      "normalized_value": "between"
+    },
+    {
+      "term_id": "term_alma_62_3_14_01",
+      "reference_id": "alma_62_3_14",
+      "term_text": "went down",
+      "term_category": "direction",
+      "normalized_value": "down"
+    },
+    {
+      "term_id": "term_alma_48_2_3_01",
+      "reference_id": "alma_48_2_3",
+      "term_text": "from",
+      "term_category": "relation",
+      "normalized_value": "from"
+    },
+    {
+      "term_id": "term_alma_48_2_3_02",
+      "reference_id": "alma_48_2_3",
+      "term_text": "unto",
+      "term_category": "relation",
+      "normalized_value": "to"
+    },
+    {
+      "term_id": "term_alma_50_13_15_01",
+      "reference_id": "alma_50_13_15",
+      "term_text": "east borders",
+      "term_category": "direction",
+      "normalized_value": "east_border"
+    },
+    {
+      "term_id": "term_alma_50_13_15_02",
+      "reference_id": "alma_50_13_15",
+      "term_text": "seashore",
+      "term_category": "coastal",
+      "normalized_value": "seashore"
+    },
+    {
+      "term_id": "term_alma_50_25_34_01",
+      "reference_id": "alma_50_25_34",
+      "term_text": "between",
+      "term_category": "border",
+      "normalized_value": "between"
+    },
+    {
+      "term_id": "term_alma_50_25_34_02",
+      "reference_id": "alma_50_25_34",
+      "term_text": "toward the land northward",
+      "term_category": "direction",
+      "normalized_value": "northward"
+    },
+    {
+      "term_id": "term_alma_52_17_23_01",
+      "reference_id": "alma_52_17_23",
+      "term_text": "toward the seashore",
+      "term_category": "coastal",
+      "normalized_value": "toward_seashore"
+    },
+    {
+      "term_id": "term_alma_62_18_01",
+      "reference_id": "alma_62_18",
+      "term_text": "city and land",
+      "term_category": "city_land_distinction",
+      "normalized_value": "city_land_pair"
+    },
+    {
+      "term_id": "term_alma_56_25_01",
+      "reference_id": "alma_56_25",
+      "term_text": "by way of",
+      "term_category": "route",
+      "normalized_value": "by_way_of"
+    },
+    {
+      "term_id": "term_alma_56_25_02",
+      "reference_id": "alma_56_25",
+      "term_text": "unto",
+      "term_category": "relation",
+      "normalized_value": "to"
+    },
+    {
+      "term_id": "term_alma_56_31_36_01",
+      "reference_id": "alma_56_31_36",
+      "term_text": "away from",
+      "term_category": "route",
+      "normalized_value": "away_from"
+    },
+    {
+      "term_id": "term_alma_56_31_36_02",
+      "reference_id": "alma_56_31_36",
+      "term_text": "toward",
+      "term_category": "route",
+      "normalized_value": "toward"
+    },
+    {
+      "term_id": "term_alma_57_18_20_01",
+      "reference_id": "alma_57_18_20",
+      "term_text": "city and land",
+      "term_category": "city_land_distinction",
+      "normalized_value": "city_land_pair"
+    },
+    {
+      "term_id": "term_alma_58_13_24_01",
+      "reference_id": "alma_58_13_24",
+      "term_text": "advanced toward",
+      "term_category": "route",
+      "normalized_value": "toward"
+    },
+    {
+      "term_id": "term_mosiah_7_1_2_01",
+      "reference_id": "mosiah_7_1_2",
+      "term_text": "go up",
+      "term_category": "direction",
+      "normalized_value": "up"
+    },
+    {
+      "term_id": "term_mosiah_7_4_5_01",
+      "reference_id": "mosiah_7_4_5",
+      "term_text": "north of",
+      "term_category": "direction",
+      "normalized_value": "north_of"
+    },
+    {
+      "term_id": "term_mosiah_7_6_01",
+      "reference_id": "mosiah_7_6",
+      "term_text": "went down",
+      "term_category": "direction",
+      "normalized_value": "down"
+    },
+    {
+      "term_id": "term_mosiah_9_14_01",
+      "reference_id": "mosiah_9_14",
+      "term_text": "south of",
+      "term_category": "direction",
+      "normalized_value": "south_of"
+    },
+    {
+      "term_id": "term_mosiah_10_6_8_01",
+      "reference_id": "mosiah_10_6_8",
+      "term_text": "round about",
+      "term_category": "relation",
+      "normalized_value": "around"
+    },
+    {
+      "term_id": "term_mosiah_10_6_8_02",
+      "reference_id": "mosiah_10_6_8",
+      "term_text": "north of",
+      "term_category": "direction",
+      "normalized_value": "north_of"
+    },
+    {
+      "term_id": "term_mosiah_18_4_8_01",
+      "reference_id": "mosiah_18_4_8",
+      "term_text": "waters of Mormon",
+      "term_category": "named_descriptor",
+      "normalized_value": "waters_mormon"
+    },
+    {
+      "term_id": "term_mosiah_23_1_5_01",
+      "reference_id": "mosiah_23_1_5",
+      "term_text": "into the wilderness",
+      "term_category": "route",
+      "normalized_value": "into_wilderness"
+    },
+    {
+      "term_id": "term_mosiah_24_20_25_01",
+      "reference_id": "mosiah_24_20_25",
+      "term_text": "arrived in the land of Zarahemla",
+      "term_category": "route",
+      "normalized_value": "route_to_zarahemla"
+    },
+    {
+      "term_id": "term_ether_1_1_01",
+      "reference_id": "ether_1_1",
+      "term_text": "north country",
+      "term_category": "direction",
+      "normalized_value": "north_country"
+    },
+    {
+      "term_id": "term_ether_9_3_01",
+      "reference_id": "ether_9_3",
+      "term_text": "eastward",
+      "term_category": "direction",
+      "normalized_value": "eastward"
+    },
+    {
+      "term_id": "term_ether_9_3_02",
+      "reference_id": "ether_9_3",
+      "term_text": "by the seashore",
+      "term_category": "coastal",
+      "normalized_value": "by_seashore"
+    },
+    {
+      "term_id": "term_ether_14_3_6_01",
+      "reference_id": "ether_14_3_6",
+      "term_text": "wilderness of Akish",
+      "term_category": "named_descriptor",
+      "normalized_value": "wilderness_akish"
+    },
+    {
+      "term_id": "term_ether_14_11_15_01",
+      "reference_id": "ether_14_11_15",
+      "term_text": "came up unto",
+      "term_category": "direction",
+      "normalized_value": "up_to"
+    },
+    {
+      "term_id": "term_ether_14_11_15_02",
+      "reference_id": "ether_14_11_15",
+      "term_text": "borders upon the seashore",
+      "term_category": "coastal",
+      "normalized_value": "seashore_border"
+    },
+    {
+      "term_id": "term_ether_14_26_28_01",
+      "reference_id": "ether_14_26_28",
+      "term_text": "eastward",
+      "term_category": "direction",
+      "normalized_value": "eastward"
+    },
+    {
+      "term_id": "term_ether_14_26_28_02",
+      "reference_id": "ether_14_26_28",
+      "term_text": "near",
+      "term_category": "relation",
+      "normalized_value": "near"
+    },
+    {
+      "term_id": "term_ether_15_8_01",
+      "reference_id": "ether_15_8",
+      "term_text": "waters of Ripliancum",
+      "term_category": "named_descriptor",
+      "normalized_value": "waters_ripliancum"
+    },
+    {
+      "term_id": "term_ether_15_10_11_01",
+      "reference_id": "ether_15_10_11",
+      "term_text": "same hill",
+      "term_category": "equivalence",
+      "normalized_value": "same_hill"
+    },
+    {
+      "term_id": "term_ether_15_10_11_02",
+      "reference_id": "ether_15_10_11",
+      "term_text": "Cumorah",
+      "term_category": "cross_era_name",
+      "normalized_value": "cumorah"
+    },
+    {
+      "term_id": "term_ether_15_14_01",
+      "reference_id": "ether_15_14",
+      "term_text": "all the face of the land",
+      "term_category": "macro_scope",
+      "normalized_value": "whole_land_scope"
+    },
+    {
+      "term_id": "term_omni_1_12_13_01",
+      "reference_id": "omni_1_12_13",
+      "term_text": "down to",
+      "term_category": "direction",
+      "normalized_value": "down"
+    },
+    {
+      "term_id": "term_omni_1_27_30_01",
+      "reference_id": "omni_1_27_30",
+      "term_text": "went up again",
+      "term_category": "direction",
+      "normalized_value": "up"
+    },
+    {
+      "term_id": "term_mosiah_2_1_7_01",
+      "reference_id": "mosiah_2_1_7",
+      "term_text": "temple",
+      "term_category": "civic_landmark",
+      "normalized_value": "temple"
+    },
+    {
+      "term_id": "term_mosiah_2_1_7_02",
+      "reference_id": "mosiah_2_1_7",
+      "term_text": "tower",
+      "term_category": "civic_landmark",
+      "normalized_value": "tower"
+    },
+    {
+      "term_id": "term_mosiah_5_15_01",
+      "reference_id": "mosiah_5_15",
+      "term_text": "returned to their own houses",
+      "term_category": "civic_return",
+      "normalized_value": "return_home"
+    },
+    {
+      "term_id": "term_1_nephi_2_4_6_01",
+      "reference_id": "1_nephi_2_4_6",
+      "term_text": "came down",
+      "term_category": "direction",
+      "normalized_value": "down"
+    },
+    {
+      "term_id": "term_1_nephi_2_4_6_02",
+      "reference_id": "1_nephi_2_4_6",
+      "term_text": "Red Sea",
+      "term_category": "named_descriptor",
+      "normalized_value": "red_sea_old_world"
+    },
+    {
+      "term_id": "term_1_nephi_2_8_10_01",
+      "reference_id": "1_nephi_2_8_10",
+      "term_text": "emptied into",
+      "term_category": "water_relation",
+      "normalized_value": "empties_into"
+    },
+    {
+      "term_id": "term_1_nephi_16_13_14_01",
+      "reference_id": "1_nephi_16_13_14",
+      "term_text": "south-southeast",
+      "term_category": "direction",
+      "normalized_value": "south_southeast"
+    },
+    {
+      "term_id": "term_1_nephi_16_34_01",
+      "reference_id": "1_nephi_16_34",
+      "term_text": "Nahom",
+      "term_category": "named_descriptor",
+      "normalized_value": "nahom_old_world"
+    },
+    {
+      "term_id": "term_1_nephi_17_5_6_01",
+      "reference_id": "1_nephi_17_5_6",
+      "term_text": "Bountiful",
+      "term_category": "named_descriptor",
+      "normalized_value": "bountiful_old_world"
+    },
+    {
+      "term_id": "term_1_nephi_3_11_13_01",
+      "reference_id": "1_nephi_3_11_13",
+      "term_text": "house of Laban",
+      "term_category": "civic_landmark",
+      "normalized_value": "house_laban_old_world"
+    },
+    {
+      "term_id": "term_1_nephi_3_21_26_01",
+      "reference_id": "1_nephi_3_21_26",
+      "term_text": "land of our inheritance",
+      "term_category": "regional_descriptor",
+      "normalized_value": "inheritance_land"
+    },
+    {
+      "term_id": "term_1_nephi_4_1_5_01",
+      "reference_id": "1_nephi_4_1_5",
+      "term_text": "go up again",
+      "term_category": "direction",
+      "normalized_value": "up"
+    },
+    {
+      "term_id": "term_1_nephi_7_2_5_01",
+      "reference_id": "1_nephi_7_2_5",
+      "term_text": "bring down",
+      "term_category": "direction",
+      "normalized_value": "down"
+    },
+    {
+      "term_id": "term_1_nephi_17_7_10_01",
+      "reference_id": "1_nephi_17_7_10",
+      "term_text": "mountain",
+      "term_category": "terrain",
+      "normalized_value": "mountain_bountiful_old_world"
+    },
+    {
+      "term_id": "term_1_nephi_17_7_10_02",
+      "reference_id": "1_nephi_17_7_10",
+      "term_text": "ore",
+      "term_category": "resource",
+      "normalized_value": "ore_site_bountiful_old_world"
+    },
+    {
+      "term_id": "term_1_nephi_18_1_2_01",
+      "reference_id": "1_nephi_18_1_2",
+      "term_text": "build the ship",
+      "term_category": "shipbuilding",
+      "normalized_value": "shipyard_bountiful_old_world"
+    },
+    {
+      "term_id": "term_1_nephi_18_8_23_01",
+      "reference_id": "1_nephi_18_8_23",
+      "term_text": "great waters",
+      "term_category": "transition_route",
+      "normalized_value": "great_waters_crossing_transition"
+    },
+    {
+      "term_id": "term_1_nephi_18_8_23_02",
+      "reference_id": "1_nephi_18_8_23",
+      "term_text": "promised land",
+      "term_category": "regional_descriptor",
+      "normalized_value": "promised_land_initial_region"
+    },
+    {
+      "term_id": "term_2_nephi_5_5_8_01",
+      "reference_id": "2_nephi_5_5_8",
+      "term_text": "land of our first inheritance",
+      "term_category": "regional_descriptor",
+      "normalized_value": "land_first_inheritance"
+    },
+    {
+      "term_id": "term_2_nephi_5_15_16_01",
+      "reference_id": "2_nephi_5_15_16",
+      "term_text": "temple",
+      "term_category": "civic_landmark",
+      "normalized_value": "temple_nephi"
+    },
+    {
+      "term_id": "term_jacob_2_11_01",
+      "reference_id": "jacob_2_11",
+      "term_text": "in the temple",
+      "term_category": "gathering_landmark",
+      "normalized_value": "temple_nephi"
+    }
+  ]
+}

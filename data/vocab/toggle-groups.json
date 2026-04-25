@@ -1,0 +1,12 @@
+{
+  "up_down_mode": ["direction", "elevation", "exclude"],
+  "city_land_mode": ["merged", "separate"],
+  "inference_mode": ["explicit_only", "explicit_plus_strong", "all"],
+  "unnamed_regions_mode": ["include", "exclude"],
+  "natural_features_mode": ["include", "exclude"],
+  "border_claims_mode": ["include", "exclude"],
+  "travel_edges_mode": ["include", "exclude"],
+  "event_overlay_mode": ["none", "missionary", "military", "migration", "all"],
+  "campaign_render_mode": ["point_to_point", "inferred_route", "sequence_only"],
+  "chronology_mode": ["jaredite", "pre_christ", "destruction", "post_christ"]
+}

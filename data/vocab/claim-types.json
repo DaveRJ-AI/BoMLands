@@ -1,0 +1,18 @@
+[
+  "north_of",
+  "south_of",
+  "east_of",
+  "west_of",
+  "near",
+  "adjacent_to",
+  "borders",
+  "between",
+  "contains",
+  "within",
+  "separated_by",
+  "route_to",
+  "crosses",
+  "coastal_to",
+  "upstream_from",
+  "downstream_from"
+]

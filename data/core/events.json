@@ -1,0 +1,379 @@
+{
+  "events": [
+    {
+      "event_id": "lehite_old_world_journey",
+      "event_name": "Lehite Old World Journey",
+      "event_type": "migration",
+      "time_scope": {
+        "book": "1 Nephi",
+        "chapter_start": 2,
+        "chapter_end": 18
+      },
+      "participants": [
+        "Lehi",
+        "Sariah",
+        "Nephi",
+        "Laman",
+        "Lemuel",
+        "Sam",
+        "Ishmael family"
+      ],
+      "summary": "The departure from Jerusalem, first encampment at the Valley of Lemuel, two return trips to the Jerusalem area, southward wilderness travel, turn at Nahom, and arrival at Bountiful.",
+      "related_references": [
+        "1_nephi_2_4_6",
+        "1_nephi_2_8_10",
+        "1_nephi_3_11_13",
+        "1_nephi_3_21_26",
+        "1_nephi_7_2_5",
+        "1_nephi_16_13_14",
+        "1_nephi_16_17_18",
+        "1_nephi_16_34",
+        "1_nephi_17_5_6"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Old World migration overlay built from the principal narrative waypoints through the arrival at Bountiful."
+    },
+    {
+      "event_id": "alma_22_geography_frame",
+      "event_name": "Alma 22 Geography Framework",
+      "event_type": "administrative_movement",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 22,
+        "chapter_end": 22
+      },
+      "participants": [
+        "Aaron",
+        "Lamanite king"
+      ],
+      "summary": "A formal geographic framing of Nephite and Lamanite lands, boundaries, seas, and the northward gateway.",
+      "related_references": [
+        "alma_22_27",
+        "alma_22_28",
+        "alma_22_29",
+        "alma_22_30",
+        "alma_22_31",
+        "alma_22_32",
+        "alma_22_33",
+        "alma_22_34"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "This is primarily a structural geography event rather than a travel narrative."
+    },
+    {
+      "event_id": "sons_of_mosiah_mission",
+      "event_name": "Sons of Mosiah Mission to the Lamanites",
+      "event_type": "missionary_journey",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 17,
+        "chapter_end": 26
+      },
+      "participants": [
+        "Ammon",
+        "Aaron",
+        "Omner",
+        "Himni"
+      ],
+      "summary": "The sons of Mosiah depart Zarahemla and travel into Lamanite lands to preach, separating into different regions and establishing missionary footholds.",
+      "related_references": [
+        "alma_17_6",
+        "alma_17_20",
+        "alma_21_1",
+        "alma_21_11",
+        "alma_26_1"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Primary missionary overlay for early Alma narrative."
+    },
+    {
+      "event_id": "alma_melek_ammonihah_mission",
+      "event_name": "Alma Mission to Melek, Ammonihah, and Sidom",
+      "event_type": "missionary_journey",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 8,
+        "chapter_end": 15
+      },
+      "participants": [
+        "Alma",
+        "Amulek"
+      ],
+      "summary": "Alma departs from Zarahemla into Melek, continues north to Ammonihah, later establishes the church at Sidom, and returns to Zarahemla with Amulek.",
+      "related_references": [
+        "alma_8_1",
+        "alma_8_3",
+        "alma_8_4",
+        "alma_15_14",
+        "alma_15_17"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "First specific named missionary route for map overlay review. Aaron is intentionally omitted from the route because the text does not clearly show Alma completing that leg on this mission."
+    },
+    {
+      "event_id": "zoramite_war_campaigns",
+      "event_name": "Zoramite War Campaigns",
+      "event_type": "military_campaign",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 43,
+        "chapter_end": 44
+      },
+      "participants": [
+        "Moroni",
+        "Lehi",
+        "Zerahemnah"
+      ],
+      "summary": "Initial major campaign centered on Jershon, Antionum, the wilderness corridor south of Sidon, and the crossing conflict near the river.",
+      "related_references": [
+        "alma_43_4",
+        "alma_43_22",
+        "alma_43_27",
+        "alma_44_22"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Opening military overlay for eastern frontier pressure."
+    },
+    {
+      "event_id": "amalickiah_east_coast_campaign",
+      "event_name": "Amalickiah East Coast Campaign",
+      "event_type": "military_campaign",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 48,
+        "chapter_end": 51
+      },
+      "participants": [
+        "Moroni",
+        "Amalickiah"
+      ],
+      "summary": "Defensive fortification and east coast campaign pressure involving Moroni, Nephihah, Lehi, Morianton, and surrounding cities.",
+      "related_references": [
+        "alma_48_2",
+        "alma_50_13",
+        "alma_50_14",
+        "alma_50_15",
+        "alma_51_28",
+        "alma_51_32"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Introduces fortified city chain and coastal defense logic."
+    },
+    {
+      "event_id": "teancum_bountiful_campaign",
+      "event_name": "Teancum Bountiful Campaign",
+      "event_type": "military_campaign",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 51,
+        "chapter_end": 52
+      },
+      "participants": [
+        "Teancum",
+        "Amalickiah",
+        "Moroni"
+      ],
+      "summary": "Teancum intercepts Amalickiah near Bountiful and secures the northern gateway corridor.",
+      "related_references": [
+        "alma_51_28",
+        "alma_51_32",
+        "alma_52_9"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Strong north-gateway overlay centered on Bountiful."
+    },
+    {
+      "event_id": "moroni_lehi_east_city_recovery",
+      "event_name": "Moroni and Lehi East City Recovery",
+      "event_type": "military_campaign",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 52,
+        "chapter_end": 55
+      },
+      "participants": [
+        "Moroni",
+        "Lehi",
+        "Teancum"
+      ],
+      "summary": "Campaign to recover Mulek, Gid, Omner, Morianton, and Nephihah through east-coast city operations.",
+      "related_references": [
+        "alma_52_20",
+        "alma_52_26",
+        "alma_55_7",
+        "alma_55_33"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Core city-network campaign overlay."
+    },
+    {
+      "event_id": "helaman_antipus_southern_campaign",
+      "event_name": "Helaman and Antipus Southern Campaign",
+      "event_type": "military_campaign",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 56,
+        "chapter_end": 58
+      },
+      "participants": [
+        "Helaman",
+        "Antipus",
+        "stripling_warriors"
+      ],
+      "summary": "Southern theater campaign involving Judea, Antiparah, Cumeni, Manti, and the wilderness pursuit corridor.",
+      "related_references": [
+        "alma_56_14",
+        "alma_56_31",
+        "alma_57_18",
+        "alma_58_13"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Important for south/east military geography and route pressure."
+    },
+    {
+      "event_id": "helaman_young_sons_campaign",
+      "event_name": "Helaman and His Young Sons",
+      "event_type": "military_campaign",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 56,
+        "chapter_end": 56
+      },
+      "participants": [
+        "Helaman",
+        "stripling_warriors",
+        "Antipus"
+      ],
+      "summary": "Helaman marches from the land of Zarahemla to Judea, entering the southern theater defined by Manti, Zeezrom, Cumeni, and Antiparah.",
+      "related_references": [
+        "alma_56_9",
+        "alma_56_13_14",
+        "alma_56_14_city_manti"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Compact military route overlay for Helaman's initial southern-theater movement with the two thousand young sons."
+    },
+    {
+      "event_id": "moroni_pahoran_zarahemla_campaign",
+      "event_name": "Moroni and Pahoran Zarahemla Campaign",
+      "event_type": "military_campaign",
+      "time_scope": {
+        "book": "Alma",
+        "chapter_start": 61,
+        "chapter_end": 62
+      },
+      "participants": [
+        "Moroni",
+        "Pahoran",
+        "Pacumeni"
+      ],
+      "summary": "Internal campaign to retake Zarahemla and restore political control before resuming external defense.",
+      "related_references": [
+        "alma_61_14",
+        "alma_62_7"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["pre_christ"],
+        "primary_period": "pre_christ"
+      },
+      "notes": "Links political and military geography back to Zarahemla."
+    },
+    {
+      "event_id": "three_nephi_destruction",
+      "event_name": "3 Nephi Destruction Event",
+      "event_type": "cataclysm",
+      "time_scope": {
+        "book": "3 Nephi",
+        "chapter_start": 8,
+        "chapter_end": 10
+      },
+      "participants": [
+        "Nephites",
+        "Lamanites"
+      ],
+      "summary": "Cataclysmic destruction reshapes cities, coastlines, terrain, and the wider face of the land.",
+      "related_references": [
+        "3_nephi_8_8",
+        "3_nephi_8_9",
+        "3_nephi_8_10",
+        "3_nephi_8_12",
+        "3_nephi_9_9"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["destruction"],
+        "primary_period": "destruction"
+      },
+      "notes": "Not a travel event; functions as a transformation overlay."
+    },
+    {
+      "event_id": "christ_ministry_bountiful",
+      "event_name": "Christ Ministry at Bountiful",
+      "event_type": "post_christ_ministry",
+      "time_scope": {
+        "book": "3 Nephi",
+        "chapter_start": 11,
+        "chapter_end": 20
+      },
+      "participants": [
+        "Jesus Christ",
+        "disciples",
+        "multitude"
+      ],
+      "summary": "The people gather at the temple in Bountiful where Christ appears and ministers to them.",
+      "related_references": [
+        "3_nephi_11_1",
+        "3_nephi_17_1",
+        "3_nephi_19_3",
+        "3_nephi_20_14"
+      ],
+      "path_mode": "sequence_based",
+      "chronology": {
+        "periods": ["post_christ"],
+        "primary_period": "post_christ"
+      },
+      "notes": "First major post-Christ ministry overlay."
+    }
+  ]
+}
