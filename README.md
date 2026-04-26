@@ -28,4 +28,4 @@ This project builds a **text-derived internal map** of the Book of Mormon based 
 
 Phase 1:
 - Extract and structure Alma 22
-- Expand to mission and military overlays
+- Expand to mission and military overlays# BoMLands
