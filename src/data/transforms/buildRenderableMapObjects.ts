@@ -28,6 +28,14 @@ type StaticUnderlayDefinition = {
   zIndex: number;
 };
 
+function publicAssetPath(path: string): string {
+  const baseUrl = import.meta.env.BASE_URL;
+  const normalizedBase = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
+  const normalizedPath = path.startsWith("/") ? path.slice(1) : path;
+
+  return `${normalizedBase}${normalizedPath}`;
+}
+
 const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
   {
     id: "new_world_underlay_background",
@@ -41,7 +49,7 @@ const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
     y: 1050,
     width: 1400,
     height: 2100,
-    assetPath: "/assets/map-underlays/new_world_underlay.png",
+    assetPath: publicAssetPath("assets/map-underlays/new_world_underlay.png"),
     opacity: 0.75,
     zIndex: 0
   },
@@ -57,7 +65,7 @@ const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
     y: 517.5,
     width: 1450,
     height: 1035,
-    assetPath: "/assets/map-underlays/background_old_world.png",
+    assetPath: publicAssetPath("assets/map-underlays/background_old_world.png"),
     opacity: 0.3,
     zIndex: 0
   },
@@ -73,7 +81,7 @@ const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
     y: 237,
     width: 310,
     height: 206,
-    assetPath: "/assets/map-underlays/Jerusalem.png",
+    assetPath: publicAssetPath("assets/map-underlays/Jerusalem.png"),
     opacity: 0.3,
     zIndex: 2
   },
@@ -90,7 +98,7 @@ const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
     width: 390,
     height: 610,
     rotationDegrees: 0,
-    assetPath: "/assets/map-underlays/red_sea.png",
+    assetPath: publicAssetPath("assets/map-underlays/red_sea.png"),
     opacity: 0,
     zIndex: 1
   },
@@ -106,7 +114,7 @@ const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
     y: 716,
     width: 468,
     height: 312,
-    assetPath: "/assets/map-underlays/Nahom.png",
+    assetPath: publicAssetPath("assets/map-underlays/Nahom.png"),
     opacity: 0.45,
     zIndex: 2
   },
@@ -122,7 +130,7 @@ const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
     y: 693,
     width: 220,
     height: 327,
-    assetPath: "/assets/map-underlays/bountiful_old_world.png",
+    assetPath: publicAssetPath("assets/map-underlays/bountiful_old_world.png"),
     opacity: 0.45,
     zIndex: 2
   }
