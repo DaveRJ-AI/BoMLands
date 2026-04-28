@@ -5,6 +5,7 @@ import type {
   ToggleState,
   RenderDomain
 } from "../../types/toggles";
+import type { Location } from "../../types/location";
 import type { RenderDataset, RenderableMapObject } from "../../types/render";
 import type {
   TierVisibilityFilters,
@@ -31,11 +32,9 @@ const DEFAULT_TOGGLES: ToggleState = {
   natural_features_mode: "include",
   border_claims_mode: "include",
   travel_edges_mode: "include",
-  event_overlay_mode: "none",
-  campaign_render_mode: "sequence_only"
+  event_overlay_mode: "none"
 };
 
-const DEFAULT_CHRONOLOGY: ChronologyPeriod[] = [];
 const DEFAULT_RENDER_DOMAIN: RenderDomain = "new_world_map";
 
 const DEFAULT_TIER_FILTERS: TierVisibilityFilters = {
@@ -60,6 +59,12 @@ const RENDER_DOMAIN_LABELS: Record<RenderDomain, string> = {
   transition: "Transition Layer"
 };
 
+const VISIBLE_RENDER_DOMAINS: RenderDomain[] = [
+  "new_world_map",
+  "old_world_map",
+  "jaredite_map"
+];
+
 const CHRONOLOGY_LABELS: Record<ChronologyPeriod, string> = {
   jaredite: "Jaredites",
   pre_christ: "Pre-Christ Visit",
@@ -67,10 +72,28 @@ const CHRONOLOGY_LABELS: Record<ChronologyPeriod, string> = {
   post_christ: "Post-Christ Visit"
 };
 
+const CHRONOLOGY_PERIODS_BY_RENDER_DOMAIN: Record<
+  RenderDomain,
+  ChronologyPeriod[]
+> = {
+  new_world_map: ["pre_christ", "destruction", "post_christ"],
+  old_world_map: ["pre_christ"],
+  jaredite_map: ["jaredite"],
+  transition: []
+};
+
+const DEFAULT_CHRONOLOGY: ChronologyPeriod[] =
+  CHRONOLOGY_PERIODS_BY_RENDER_DOMAIN[DEFAULT_RENDER_DOMAIN];
+
 type SearchOption = {
   id: string;
   label: string;
   subtitle: string;
+  renderDomain: RenderDomain;
+  chronologyPeriods: ChronologyPeriod[];
+  defaultRenderState?: Location["default_render_state"];
+  tierKey: keyof TierVisibilityFilters;
+  categoryKey: keyof CategoryVisibilityFilters;
 };
 
 type PlacementCoordinate = {
@@ -113,19 +136,103 @@ function normalizeSearchText(value: string): string {
   return value.toLowerCase().trim().replace(/\s+/g, " ");
 }
 
-function buildSearchSubtitle(object: RenderableMapObject): string {
-  const feature = object.featureType ? String(object.featureType) : "unknown";
-  const period = object.primaryPeriod ?? "unknown";
-  return `${feature} • ${period}`;
+function humanizeToken(value: string): string {
+  return value
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (character) => character.toUpperCase());
 }
 
-function isSearchableObject(object: RenderableMapObject): boolean {
-  if (!object) return false;
-  if (object.style?.visible === false) return false;
-  if (object.renderLayer === "claim_line" || object.renderLayer === "overlay_path") {
-    return false;
+function getLocationRenderDomain(location: Location): RenderDomain | null {
+  const renderDomain = location.render_domain ?? "new_world_map";
+
+  return VISIBLE_RENDER_DOMAINS.includes(renderDomain as RenderDomain)
+    ? (renderDomain as RenderDomain)
+    : null;
+}
+
+function getLocationTierKey(location: Location): keyof TierVisibilityFilters {
+  if (location.notes?.startsWith("Backfilled from PDF cross-check audit")) {
+    return "tier5";
   }
-  return true;
+
+  switch (location.visibility_tier) {
+    case "tier_1_anchor":
+      return "tier1";
+    case "tier_2_major":
+      return "tier2";
+    case "tier_3_supporting":
+      return "tier3";
+    case "tier_4_detail":
+      return "tier4";
+    case "tier_5_placeholder":
+      return "tier5";
+    default:
+      return "tier2";
+  }
+}
+
+function getLocationCategoryKey(location: Location): keyof CategoryVisibilityFilters {
+  const mapRole = location.map_role;
+  const featureType = location.feature_type;
+
+  if (mapRole === "city_node" || featureType === "city") {
+    return "cities";
+  }
+
+  if (
+    mapRole === "water_boundary" ||
+    featureType === "sea" ||
+    featureType === "river"
+  ) {
+    return "waters";
+  }
+
+  if (
+    mapRole === "macro_region" ||
+    mapRole === "region_underlay" ||
+    featureType === "land" ||
+    featureType === "region" ||
+    featureType === "border_region"
+  ) {
+    return "lands";
+  }
+
+  return "landmarks";
+}
+
+function getLocationChronologyPeriods(location: Location): ChronologyPeriod[] {
+  return Array.isArray(location.chronology?.periods)
+    ? location.chronology.periods
+    : [];
+}
+
+function buildLocationSearchSubtitle(
+  location: Location,
+  renderDomain: RenderDomain,
+  chronologyPeriods: ChronologyPeriod[]
+): string {
+  const mapLabel = RENDER_DOMAIN_LABELS[renderDomain];
+  const feature = humanizeToken(location.feature_type ?? "unknown");
+  const chronologyLabel = chronologyPeriods
+    .map((period) => CHRONOLOGY_LABELS[period] ?? humanizeToken(period))
+    .join(", ");
+
+  return chronologyLabel
+    ? `${mapLabel} • ${feature} • ${chronologyLabel}`
+    : `${mapLabel} • ${feature}`;
+}
+
+function findRenderableObjectForLocation(
+  objects: RenderableMapObject[],
+  locationId: string
+): RenderableMapObject | null {
+  return (
+    objects.find((object) => {
+      if (object.sourceType !== "location") return false;
+      if (object.sourceId === locationId) return true;
+      return object.metadata?.mergedSourceIds?.includes(locationId) ?? false;
+    }) ?? null
+  );
 }
 
 export default function MapDemo() {
@@ -153,6 +260,8 @@ export default function MapDemo() {
   const [selectedOverlayEventId, setSelectedOverlayEventId] = useState<string>("all");
   const [selectedRelationshipLocationId, setSelectedRelationshipLocationId] =
     useState<string | null>(null);
+  const [pendingSelectedLocationId, setPendingSelectedLocationId] =
+    useState<string | null>(null);
   const [placementAssistEnabled, setPlacementAssistEnabled] = useState<boolean>(false);
   const [placementCoordinate, setPlacementCoordinate] =
     useState<PlacementCoordinate | null>(null);
@@ -168,24 +277,60 @@ export default function MapDemo() {
       ? renderDataset
       : { objects: [] };
 
+  const visibleChronologyPeriods = useMemo<ChronologyPeriod[]>(() => {
+    const allowedPeriods =
+      CHRONOLOGY_PERIODS_BY_RENDER_DOMAIN[selectedRenderDomain] ?? [];
+    const configuredPeriods =
+      coreDataset?.appConfig.available_chronology_periods ?? [
+        "jaredite",
+        "pre_christ",
+        "destruction",
+        "post_christ"
+      ];
+
+    return configuredPeriods.filter((period) => allowedPeriods.includes(period));
+  }, [coreDataset, selectedRenderDomain]);
+
   const searchableOptions = useMemo<SearchOption[]>(() => {
     const seen = new Set<string>();
 
-    return safeRenderDataset.objects
-      .filter(isSearchableObject)
-      .map((object) => ({
-        id: object.id,
-        label: getObjectLabel(object),
-        subtitle: buildSearchSubtitle(object)
-      }))
+    if (!coreDataset) return [];
+
+    return coreDataset.locations
+      .filter((location) => location.default_render_state !== "hidden")
+      .map((location): SearchOption | null => {
+        const renderDomain = getLocationRenderDomain(location);
+        if (!renderDomain) return null;
+
+        const chronologyPeriods = getLocationChronologyPeriods(location).filter(
+          (period) =>
+            CHRONOLOGY_PERIODS_BY_RENDER_DOMAIN[renderDomain].includes(period)
+        );
+
+        return {
+          id: location.id,
+          label: location.display_name || location.canonical_name || location.id,
+          subtitle: buildLocationSearchSubtitle(
+            location,
+            renderDomain,
+            chronologyPeriods
+          ),
+          renderDomain,
+          chronologyPeriods,
+          defaultRenderState: location.default_render_state,
+          tierKey: getLocationTierKey(location),
+          categoryKey: getLocationCategoryKey(location)
+        };
+      })
+      .filter((option): option is SearchOption => option !== null)
       .filter((option) => {
-        const key = `${option.id}::${option.label}`;
+        const key = option.id;
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
       })
       .sort((a, b) => a.label.localeCompare(b.label));
-  }, [safeRenderDataset.objects]);
+  }, [coreDataset]);
 
   const filteredOptions = useMemo<SearchOption[]>(() => {
     const query = normalizeSearchText(searchText);
@@ -610,6 +755,7 @@ export default function MapDemo() {
   ]);
 
   useEffect(() => {
+    if (pendingSelectedLocationId) return;
     if (!selectedObjectId) return;
 
     const stillExists = safeRenderDataset.objects.some(
@@ -619,12 +765,34 @@ export default function MapDemo() {
     if (!stillExists) {
       setSelectedObjectId(null);
     }
-  }, [safeRenderDataset.objects, selectedObjectId]);
+  }, [pendingSelectedLocationId, safeRenderDataset.objects, selectedObjectId]);
+
+  useEffect(() => {
+    if (!pendingSelectedLocationId) return;
+
+    const nextSelectedObject = findRenderableObjectForLocation(
+      safeRenderDataset.objects,
+      pendingSelectedLocationId
+    );
+
+    if (!nextSelectedObject) return;
+
+    setSelectedObjectId(nextSelectedObject.id);
+    setPendingSelectedLocationId(null);
+  }, [pendingSelectedLocationId, safeRenderDataset.objects]);
 
   useEffect(() => {
     if (!selectedObject) return;
     setSearchText(getObjectLabel(selectedObject));
   }, [selectedObject]);
+
+  useEffect(() => {
+    setSelectedChronology((current) => {
+      const next = current.filter((period) => visibleChronologyPeriods.includes(period));
+
+      return next.length === current.length ? current : next;
+    });
+  }, [visibleChronologyPeriods]);
 
   useEffect(() => {
     setSelectedRelationshipLocationId(null);
@@ -672,6 +840,7 @@ export default function MapDemo() {
     setTierFilters(DEFAULT_TIER_FILTERS);
     setCategoryFilters(DEFAULT_CATEGORY_FILTERS);
     setSelectedObjectId(null);
+    setPendingSelectedLocationId(null);
     setSelectedRelationshipLocationId(null);
     setSelectionFocusMode("all_visible");
     setShowRelationshipLines(false);
@@ -707,10 +876,6 @@ export default function MapDemo() {
     }));
   }
 
-  function clearChronology() {
-    setSelectedChronology([]);
-  }
-
   function toggleChronology(period: ChronologyPeriod) {
     setSelectedChronology((prev) =>
       prev.includes(period) ? prev.filter((value) => value !== period) : [...prev, period]
@@ -719,7 +884,41 @@ export default function MapDemo() {
 
   function handleSelectSearchOption(option: SearchOption) {
     setSelectedRelationshipLocationId(null);
-    setSelectedObjectId(option.id);
+    setSelectedObjectId(null);
+    setPendingSelectedLocationId(option.id);
+    setSelectedRenderDomain(option.renderDomain);
+    setTierFilters((current) => ({
+      ...current,
+      [option.tierKey]: true
+    }));
+    setCategoryFilters((current) => ({
+      ...current,
+      [option.categoryKey]: true
+    }));
+    setSelectedChronology((current) => {
+      const allowedPeriods =
+        CHRONOLOGY_PERIODS_BY_RENDER_DOMAIN[option.renderDomain] ?? [];
+      const currentAllowed = current.filter((period) =>
+        allowedPeriods.includes(period)
+      );
+
+      if (
+        option.defaultRenderState === "chronology_only" &&
+        option.chronologyPeriods.length > 0
+      ) {
+        return option.chronologyPeriods;
+      }
+
+      if (currentAllowed.length === 0) {
+        return option.chronologyPeriods;
+      }
+
+      const matchingCurrent = currentAllowed.filter((period) =>
+        option.chronologyPeriods.includes(period)
+      );
+
+      return matchingCurrent.length > 0 ? currentAllowed : option.chronologyPeriods;
+    });
     setSearchText(option.label);
     setIsSearchOpen(false);
     setActiveSearchIndex(-1);
@@ -751,7 +950,7 @@ export default function MapDemo() {
               <div className="mb-2 text-sm font-medium text-slate-800">Active map</div>
 
               <div className="flex flex-wrap gap-2">
-                {(Object.keys(RENDER_DOMAIN_LABELS) as RenderDomain[]).map((domain) => {
+                {VISIBLE_RENDER_DOMAINS.map((domain) => {
                   const isActive = selectedRenderDomain === domain;
 
                   return (
@@ -768,7 +967,9 @@ export default function MapDemo() {
                           tier5: true
                         });
                         setSelectedObjectId(null);
+                        setPendingSelectedLocationId(null);
                         setSelectedRelationshipLocationId(null);
+                        setSelectedChronology(CHRONOLOGY_PERIODS_BY_RENDER_DOMAIN[domain]);
                       }}
                       className={pillClass(isActive)}
                     >
@@ -780,30 +981,16 @@ export default function MapDemo() {
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
-              <div className="mb-2 flex items-center justify-between gap-3">
-                <div className="text-sm font-medium text-slate-800">Chronology review</div>
-                <button
-                  type="button"
-                  onClick={clearChronology}
-                  className="rounded-full border border-slate-300 px-3 py-1 text-xs font-medium text-slate-600 hover:bg-slate-50"
-                >
-                  Show all eras
-                </button>
+              <div className="mb-2 text-sm font-medium text-slate-800">
+                Chronology review
               </div>
 
               <div className="text-xs text-slate-500">
-                No era selected = show all available periods in the current map.
+                Selected periods are shown on the current map.
               </div>
 
               <div className="mt-3 flex flex-wrap gap-2">
-                {(
-                  coreDataset?.appConfig.available_chronology_periods ?? [
-                    "jaredite",
-                    "pre_christ",
-                    "destruction",
-                    "post_christ"
-                  ]
-                ).map((period) => {
+                {visibleChronologyPeriods.map((period) => {
                   const active = safeSelectedChronology.includes(period);
                   const label =
                     coreDataset?.appConfig.chronology_labels?.[period] ?? CHRONOLOGY_LABELS[period];

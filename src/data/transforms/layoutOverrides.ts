@@ -96,13 +96,6 @@ export const LAYOUT_OVERRIDES: Record<string, LayoutOverride> = {
     labelOffsetY: -2
   },
 
-  southern_wilderness_route: {
-    x: 1110,
-    y: 980,
-    width: 120,
-    height: 68
-  },
-
   sidon_headwaters_near_manti: {
     x: 800,
     y: 980,

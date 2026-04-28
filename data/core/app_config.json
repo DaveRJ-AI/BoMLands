@@ -8,8 +8,7 @@
     "natural_features_mode": "include",
     "border_claims_mode": "include",
     "travel_edges_mode": "include",
-    "event_overlay_mode": "none",
-    "campaign_render_mode": "sequence_only"
+    "event_overlay_mode": "none"
   },
   "default_chronology_selection": [
     "pre_christ"

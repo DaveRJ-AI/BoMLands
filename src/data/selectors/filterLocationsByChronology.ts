@@ -6,7 +6,7 @@ export function filterLocationsByChronology(
   selectedPeriods: ChronologyPeriod[]
 ): Location[] {
   if (selectedPeriods.length === 0) {
-    return locations;
+    return [];
   }
 
   return locations.filter((location) =>

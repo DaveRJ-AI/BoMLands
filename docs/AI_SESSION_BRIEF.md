@@ -163,16 +163,6 @@ Tier 3 is mostly reviewed and working, though some minor polish items may remain
 ### Tier 4
 Tier 4 is actively under review and should be handled by attachment family, not random isolated point movement.
 
-Recent Tier 4 work has included:
-- `tower_benjamin`
-- `valley_alma`
-- `hill_north_of_shilom`
-- `land_amulon`
-- Zarahemla / Sidon corridor Tier 4 support nodes
-
-### Known active concern
-Tier 4 still requires rigorous full-reference review before placements are treated as settled.
-
 ---
 
 ## Recommended Working Method for New Sessions

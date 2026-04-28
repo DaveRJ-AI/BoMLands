@@ -140,7 +140,6 @@ const EXACT_POSITION_SOURCE_IDS = new Set<string>([
   "land_jershon",
   "city_mulek",
   "land_mulek",
-  "mulekite_zarahemla_region",
   "land_ishmael",
   "land_midoni",
   "south_sidon_wilderness",
@@ -155,7 +154,6 @@ const EXACT_POSITION_SOURCE_IDS = new Set<string>([
   "city_cumeni",
   "city_judea",
   "bountiful_coastal_camp",
-  "multiple_lamanite_lands",
   "first_landing",
   "land_southward",
   "land_bountiful",
@@ -167,7 +165,6 @@ const EXACT_POSITION_SOURCE_IDS = new Set<string>([
   "north_country",
   "seashore_mulek",
   "wilderness_zarahemla_border",
-  "river_sidon_crossing_zone"
 ]);
 
 function normalizeText(value: string | undefined | null): string {

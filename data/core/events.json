@@ -320,34 +320,6 @@
       "notes": "Links political and military geography back to Zarahemla."
     },
     {
-      "event_id": "three_nephi_destruction",
-      "event_name": "3 Nephi Destruction Event",
-      "event_type": "cataclysm",
-      "time_scope": {
-        "book": "3 Nephi",
-        "chapter_start": 8,
-        "chapter_end": 10
-      },
-      "participants": [
-        "Nephites",
-        "Lamanites"
-      ],
-      "summary": "Cataclysmic destruction reshapes cities, coastlines, terrain, and the wider face of the land.",
-      "related_references": [
-        "3_nephi_8_8",
-        "3_nephi_8_9",
-        "3_nephi_8_10",
-        "3_nephi_8_12",
-        "3_nephi_9_9"
-      ],
-      "path_mode": "sequence_based",
-      "chronology": {
-        "periods": ["destruction"],
-        "primary_period": "destruction"
-      },
-      "notes": "Not a travel event; functions as a transformation overlay."
-    },
-    {
       "event_id": "christ_ministry_bountiful",
       "event_name": "Christ Ministry at Bountiful",
       "event_type": "post_christ_ministry",

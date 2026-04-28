@@ -6,7 +6,7 @@ export function filterEventsByChronology(
   selectedPeriods: ChronologyPeriod[]
 ): EventRecord[] {
   if (selectedPeriods.length === 0) {
-    return events;
+    return [];
   }
 
   return events.filter((event) =>
@@ -19,7 +19,7 @@ export function filterEventStepsByChronology(
   selectedPeriods: ChronologyPeriod[]
 ): EventStepRecord[] {
   if (selectedPeriods.length === 0) {
-    return eventSteps;
+    return [];
   }
 
   return eventSteps.filter((step) =>

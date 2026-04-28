@@ -289,7 +289,6 @@
       },
       "notes": "Narrative width estimate of the narrow neck corridor."
     },
-
     {
       "event_step_id": "mosiah_mission_step_01",
       "event_id": "sons_of_mosiah_mission",
@@ -308,28 +307,11 @@
       "notes": "Classic 'went up to the land of Nephi' passage—key for UP/DOWN toggle testing."
     },
     {
-      "event_step_id": "mosiah_mission_step_02",
-      "event_id": "sons_of_mosiah_mission",
-      "step_order": 2,
-      "reference_id": "alma_17_6",
-      "from_location_id": "land_nephi",
-      "to_location_id": "lamanite_regions_general",
-      "step_type": "dispersion",
-      "path_certainty": "medium",
-      "direction_terms": [],
-      "toggle_sensitivity": [],
-      "chronology": {
-        "periods": ["pre_christ"],
-        "primary_period": "pre_christ"
-      },
-      "notes": "Missionaries separate to preach among different Lamanite groups."
-    },
-    {
       "event_step_id": "mosiah_mission_step_03",
       "event_id": "sons_of_mosiah_mission",
       "step_order": 3,
       "reference_id": "alma_17_20",
-      "from_location_id": "lamanite_regions_general",
+      "from_location_id": "land_nephi",
       "to_location_id": "land_ishmael",
       "step_type": "travel",
       "path_certainty": "high",
@@ -339,14 +321,14 @@
         "periods": ["pre_christ"],
         "primary_period": "pre_christ"
       },
-      "notes": "Ammon enters the land of Ishmael."
+      "notes": "Ammon enters the land of Ishmael after the mission party reaches the land of Nephi."
     },
     {
       "event_step_id": "mosiah_mission_step_04",
       "event_id": "sons_of_mosiah_mission",
       "step_order": 4,
       "reference_id": "alma_21_1",
-      "from_location_id": "lamanite_regions_general",
+      "from_location_id": "land_nephi",
       "to_location_id": "city_jerusalem",
       "step_type": "travel",
       "path_certainty": "medium",
@@ -356,7 +338,7 @@
         "periods": ["pre_christ"],
         "primary_period": "pre_christ"
       },
-      "notes": "Aaron and companions go to Jerusalem (Lamanite city)."
+      "notes": "Aaron and companions go from the broader Nephi/Lamanite mission setting to Jerusalem."
     },
     {
       "event_step_id": "mosiah_mission_step_05",
@@ -477,7 +459,6 @@
       },
       "notes": "Alma and Amulek return from Sidom to the city of Zarahemla."
     },
-
     {
       "event_step_id": "zoramite_war_step_01",
       "event_id": "zoramite_war_campaigns",
@@ -518,7 +499,7 @@
       "step_order": 3,
       "reference_id": "alma_43_27",
       "from_location_id": "wilderness_south_sidon",
-      "to_location_id": "river_sidon_crossing_zone",
+      "to_location_id": "river_sidon",
       "step_type": "battle_movement",
       "path_certainty": "high",
       "direction_terms": ["across"],
@@ -527,14 +508,14 @@
         "periods": ["pre_christ"],
         "primary_period": "pre_christ"
       },
-      "notes": "Battle and pursuit near crossing logic around Sidon."
+      "notes": "Battle and pursuit move from the south wilderness toward the river Sidon."
     },
     {
       "event_step_id": "zoramite_war_step_04",
       "event_id": "zoramite_war_campaigns",
       "step_order": 4,
       "reference_id": "alma_44_22",
-      "from_location_id": "river_sidon_crossing_zone",
+      "from_location_id": "river_sidon",
       "to_location_id": "land_manti",
       "step_type": "retreat_or_escape",
       "path_certainty": "medium",
@@ -544,9 +525,8 @@
         "periods": ["pre_christ"],
         "primary_period": "pre_christ"
       },
-      "notes": "Survivors flee toward southern lands."
+      "notes": "Survivors flee from the Sidon battle area toward southern lands."
     },
-
     {
       "event_step_id": "amalickiah_east_step_01",
       "event_id": "amalickiah_east_coast_campaign",
@@ -632,7 +612,6 @@
       },
       "notes": "Eastern corridor reaches Mulek."
     },
-
     {
       "event_step_id": "teancum_bountiful_step_01",
       "event_id": "teancum_bountiful_campaign",
@@ -684,7 +663,6 @@
       },
       "notes": "Northern gateway secured through Bountiful."
     },
-
     {
       "event_step_id": "east_recovery_step_01",
       "event_id": "moroni_lehi_east_city_recovery",
@@ -753,7 +731,6 @@
       },
       "notes": "Nephihah falls before later recovery focus."
     },
-
     {
       "event_step_id": "helaman_antipus_step_01",
       "event_id": "helaman_antipus_southern_campaign",
@@ -770,23 +747,6 @@
         "primary_period": "pre_christ"
       },
       "notes": "Southern campaign arc begins."
-    },
-    {
-      "event_step_id": "helaman_antipus_step_02",
-      "event_id": "helaman_antipus_southern_campaign",
-      "step_order": 2,
-      "reference_id": "alma_56_31",
-      "from_location_id": "city_antiparah",
-      "to_location_id": "southern_wilderness_route",
-      "step_type": "decoy_retreat",
-      "path_certainty": "high",
-      "direction_terms": [],
-      "toggle_sensitivity": ["travel_edges_mode"],
-      "chronology": {
-        "periods": ["pre_christ"],
-        "primary_period": "pre_christ"
-      },
-      "notes": "Helaman's youth lure enemy into wilderness pursuit."
     },
     {
       "event_step_id": "helaman_antipus_step_03",
@@ -822,7 +782,6 @@
       },
       "notes": "Campaign culminates in Manti recovery."
     },
-
     {
       "event_step_id": "helaman_young_sons_step_01",
       "event_id": "helaman_young_sons_campaign",
@@ -908,7 +867,6 @@
       },
       "notes": "Antiparah closes the initial southern city sequence Helaman reports."
     },
-
     {
       "event_step_id": "zarahemla_internal_step_01",
       "event_id": "moroni_pahoran_zarahemla_campaign",
@@ -942,94 +900,7 @@
         "primary_period": "pre_christ"
       },
       "notes": "After Zarahemla stabilization, campaign returns eastward."
-    }
-    ,
-    {
-      "event_step_id": "three_nephi_destruction_step_01",
-      "event_id": "three_nephi_destruction",
-      "step_order": 1,
-      "reference_id": "3_nephi_8_8",
-      "from_location_id": "city_zarahemla_destruction",
-      "to_location_id": "destruction_cataclysm_zone",
-      "step_type": "destruction_marker",
-      "path_certainty": "high",
-      "direction_terms": [],
-      "toggle_sensitivity": [],
-      "chronology": {
-        "periods": ["destruction"],
-        "primary_period": "destruction"
-      },
-      "notes": "Zarahemla destruction node."
     },
-    {
-      "event_step_id": "three_nephi_destruction_step_02",
-      "event_id": "three_nephi_destruction",
-      "step_order": 2,
-      "reference_id": "3_nephi_8_9",
-      "from_location_id": "city_moroni_destruction",
-      "to_location_id": "great_deep_moroni",
-      "step_type": "terrain_transformation",
-      "path_certainty": "high",
-      "direction_terms": ["down"],
-      "toggle_sensitivity": ["up_down_mode"],
-      "chronology": {
-        "periods": ["destruction"],
-        "primary_period": "destruction"
-      },
-      "notes": "City-to-sea transformation."
-    },
-    {
-      "event_step_id": "three_nephi_destruction_step_03",
-      "event_id": "three_nephi_destruction",
-      "step_order": 3,
-      "reference_id": "3_nephi_8_10",
-      "from_location_id": "city_moronihah_destruction",
-      "to_location_id": "new_elevation_moronihah",
-      "step_type": "terrain_transformation",
-      "path_certainty": "high",
-      "direction_terms": ["up"],
-      "toggle_sensitivity": ["up_down_mode"],
-      "chronology": {
-        "periods": ["destruction"],
-        "primary_period": "destruction"
-      },
-      "notes": "City-to-elevation transformation."
-    },
-    {
-      "event_step_id": "three_nephi_destruction_step_04",
-      "event_id": "three_nephi_destruction",
-      "step_order": 4,
-      "reference_id": "3_nephi_8_12",
-      "from_location_id": "destruction_cataclysm_zone",
-      "to_location_id": "destruction_cataclysm_zone",
-      "step_type": "regional_transformation",
-      "path_certainty": "high",
-      "direction_terms": [],
-      "toggle_sensitivity": [],
-      "chronology": {
-        "periods": ["destruction"],
-        "primary_period": "destruction"
-      },
-      "notes": "Macro-level geography change marker."
-    },
-    {
-      "event_step_id": "three_nephi_destruction_step_05",
-      "event_id": "three_nephi_destruction",
-      "step_order": 5,
-      "reference_id": "3_nephi_9_9",
-      "from_location_id": "city_jacobugath_destruction",
-      "to_location_id": "destruction_cataclysm_zone",
-      "step_type": "destruction_marker",
-      "path_certainty": "medium",
-      "direction_terms": [],
-      "toggle_sensitivity": [],
-      "chronology": {
-        "periods": ["destruction"],
-        "primary_period": "destruction"
-      },
-      "notes": "Additional destruction-site marker."
-    },
-
     {
       "event_step_id": "christ_ministry_bountiful_step_01",
       "event_id": "christ_ministry_bountiful",

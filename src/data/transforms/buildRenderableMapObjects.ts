@@ -43,7 +43,7 @@ const OLD_WORLD_UNDERLAYS: StaticUnderlayDefinition[] = [
     renderLayer: "background",
     featureType: "unknown_geographic",
     renderDomain: "new_world_map",
-    chronologyPeriods: ["pre_christ"],
+    chronologyPeriods: ["pre_christ", "destruction"],
     primaryPeriod: "pre_christ",
     x: 700,
     y: 1050,

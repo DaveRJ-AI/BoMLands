@@ -30,7 +30,7 @@ const NEW_WORLD_MAP_HEIGHT = 2100;
 const OLD_WORLD_MAP_WIDTH = 1450;
 const OLD_WORLD_MAP_HEIGHT = 1035;
 const MIN_ZOOM = 0.7;
-const MAX_ZOOM = 3;
+const MAX_ZOOM = 4;
 const WHEEL_ZOOM_SENSITIVITY = 0.0012;
 
 function clamp(value: number, min: number, max: number): number {

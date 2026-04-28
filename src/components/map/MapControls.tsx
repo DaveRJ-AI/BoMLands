@@ -26,12 +26,12 @@ export default function MapControls({
   return (
     <div className="space-y-4">
       <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
-        <div className="mb-3 text-sm font-medium text-slate-800">Overlays</div>
+        <div className="mb-3 text-sm font-medium text-slate-800">Journeys</div>
 
         <div className="space-y-3">
           <div>
             <div className="mb-1 text-xs font-medium uppercase tracking-wide text-slate-500">
-              Overlay Type
+              Type
             </div>
             <select
               value={toggles.event_overlay_mode}
@@ -70,26 +70,6 @@ export default function MapControls({
               </select>
             </div>
           ) : null}
-
-          <div>
-            <div className="mb-1 text-xs font-medium uppercase tracking-wide text-slate-500">
-              Overlay Path Rendering
-            </div>
-            <select
-              value={toggles.campaign_render_mode}
-              onChange={(event) =>
-                onToggleChange(
-                  "campaign_render_mode",
-                  event.target.value as ToggleState["campaign_render_mode"]
-                )
-              }
-              className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700"
-            >
-              <option value="sequence_only">Sequence Only</option>
-              <option value="point_to_point">Point to Point</option>
-              <option value="inferred_route">Inferred Route</option>
-            </select>
-          </div>
         </div>
       </div>
     </div>

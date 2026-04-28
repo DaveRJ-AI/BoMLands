@@ -551,39 +551,6 @@
       "notes": ""
     },
     {
-      "mention_id": "alma_43_27_loc_01",
-      "reference_id": "alma_43_27",
-      "location_id": "wilderness_south_sidon",
-      "matched_text": "the wilderness",
-      "mention_role": "route_node",
-      "is_explicit": true,
-      "certainty": "medium",
-      "surrounding_phrase": "brought around by the wilderness",
-      "notes": ""
-    },
-    {
-      "mention_id": "alma_43_27_loc_02",
-      "reference_id": "alma_43_27",
-      "location_id": "river_sidon_crossing_zone",
-      "matched_text": "crossing zone",
-      "mention_role": "battle_site",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "toward the river crossing area",
-      "notes": "Normalized tactical node."
-    },
-    {
-      "mention_id": "alma_44_22_loc_01",
-      "reference_id": "alma_44_22",
-      "location_id": "river_sidon_crossing_zone",
-      "matched_text": "battle zone",
-      "mention_role": "origin",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "those who fled from the battle",
-      "notes": ""
-    },
-    {
       "mention_id": "alma_44_22_loc_02",
       "reference_id": "alma_44_22",
       "location_id": "land_manti",
@@ -892,17 +859,6 @@
       "notes": ""
     },
     {
-      "mention_id": "alma_56_31_loc_02",
-      "reference_id": "alma_56_31",
-      "location_id": "southern_wilderness_route",
-      "matched_text": "the wilderness",
-      "mention_role": "route_node",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "into the wilderness route",
-      "notes": "Normalized tactical path."
-    },
-    {
       "mention_id": "alma_57_18_loc_01",
       "reference_id": "alma_57_18",
       "location_id": "city_cumeni",
@@ -1033,17 +989,6 @@
       "certainty": "medium",
       "surrounding_phrase": "the earth was carried up upon the city",
       "notes": "Normalized new terrain feature."
-    },
-    {
-      "mention_id": "3_nephi_8_12_loc_01",
-      "reference_id": "3_nephi_8_12",
-      "location_id": "destruction_cataclysm_zone",
-      "matched_text": "the whole face of the land",
-      "mention_role": "region_reference",
-      "is_explicit": true,
-      "certainty": "high",
-      "surrounding_phrase": "the whole face of the land was changed",
-      "notes": "Macro-region abstraction."
     },
     {
       "mention_id": "3_nephi_9_9_loc_01",
@@ -1970,17 +1915,6 @@
       "notes": ""
     },
     {
-      "mention_id": "alma_56_14_16_loc_02",
-      "reference_id": "alma_56_14_16",
-      "location_id": "land_judea",
-      "matched_text": "land of Judea",
-      "mention_role": "theater_region",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "southern campaign theater involving Judea",
-      "notes": "Separate land overlay preserved."
-    },
-    {
       "mention_id": "alma_56_14_16_loc_03",
       "reference_id": "alma_56_14_16",
       "location_id": "city_antiparah",
@@ -2047,17 +1981,6 @@
       "notes": ""
     },
     {
-      "mention_id": "alma_56_25_loc_02",
-      "reference_id": "alma_56_25",
-      "location_id": "manti_supply_corridor",
-      "matched_text": "way of ... unto the land of Manti",
-      "mention_role": "supply_route",
-      "is_explicit": false,
-      "certainty": "high",
-      "surrounding_phrase": "no way to lead provisions ... save it were by way of the land of Zarahemla ... unto the land of Manti",
-      "notes": "Normalized operational route."
-    },
-    {
       "mention_id": "alma_56_25_loc_03",
       "reference_id": "alma_56_25",
       "location_id": "land_manti",
@@ -2089,17 +2012,6 @@
       "certainty": "medium",
       "surrounding_phrase": "away from Antiparah",
       "notes": "Separate land overlay preserved."
-    },
-    {
-      "mention_id": "alma_56_31_36_loc_03",
-      "reference_id": "alma_56_31_36",
-      "location_id": "southern_wilderness_route",
-      "matched_text": "the wilderness",
-      "mention_role": "route_node",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "into the wilderness",
-      "notes": "Existing route abstraction reused."
     },
     {
       "mention_id": "alma_56_31_36_loc_04",
@@ -2905,17 +2817,6 @@
       "notes": "City continuity retained cautiously."
     },
     {
-      "mention_id": "omni_1_14_19_loc_03",
-      "reference_id": "omni_1_14_19",
-      "location_id": "mulekite_zarahemla_region",
-      "matched_text": "people of Zarahemla",
-      "mention_role": "continuity_region",
-      "is_explicit": true,
-      "certainty": "high",
-      "surrounding_phrase": "a people, who were called the people of Zarahemla",
-      "notes": ""
-    },
-    {
       "mention_id": "omni_1_27_30_loc_01",
       "reference_id": "omni_1_27_30",
       "location_id": "land_zarahemla",
@@ -2969,17 +2870,6 @@
       "certainty": "high",
       "surrounding_phrase": "concerning the land of Zarahemla",
       "notes": ""
-    },
-    {
-      "mention_id": "mosiah_1_18_loc_02",
-      "reference_id": "mosiah_1_18",
-      "location_id": "mulekite_zarahemla_region",
-      "matched_text": "people thereof",
-      "mention_role": "continuity_region",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "and the people thereof",
-      "notes": "Tracks Mulekite continuity within Zarahemla sphere."
     },
     {
       "mention_id": "mosiah_2_1_7_loc_01",
@@ -5171,17 +5061,6 @@
       "notes": ""
     },
     {
-      "mention_id": "alma_43_41_loc_02",
-      "reference_id": "alma_43_41",
-      "location_id": "river_sidon_crossing_zone",
-      "matched_text": "the valley",
-      "mention_role": "battlefield_marker",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "met the Lamanites in the valley, on the other side of the river Sidon",
-      "notes": "Normalized to the Sidon crossing battle corridor."
-    },
-    {
       "mention_id": "alma_43_50_loc_01",
       "reference_id": "alma_43_50",
       "location_id": "river_sidon",
@@ -5204,17 +5083,6 @@
       "notes": ""
     },
     {
-      "mention_id": "alma_43_51_loc_02",
-      "reference_id": "alma_43_51",
-      "location_id": "river_sidon_crossing_zone",
-      "matched_text": "the valley",
-      "mention_role": "battlefield_marker",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "they were gathered together in one body in the valley, upon the bank by the river Sidon",
-      "notes": "Normalized to the Sidon crossing battle corridor."
-    },
-    {
       "mention_id": "alma_43_53_loc_01",
       "reference_id": "alma_43_53",
       "location_id": "river_sidon",
@@ -5224,17 +5092,6 @@
       "certainty": "high",
       "surrounding_phrase": "on the east of the river Sidon, and the armies of Moroni on the west of the river Sidon",
       "notes": ""
-    },
-    {
-      "mention_id": "alma_43_53_loc_02",
-      "reference_id": "alma_43_53",
-      "location_id": "river_sidon_crossing_zone",
-      "matched_text": "battle corridor",
-      "mention_role": "battlefield_marker",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "when Zerahemnah saw the men of Lehi on the east of the river Sidon, and the armies of Moroni on the west of the river Sidon",
-      "notes": "Normalized to the Sidon crossing battle corridor."
     },
     {
       "mention_id": "alma_44_22_loc_03",
@@ -5257,17 +5114,6 @@
       "certainty": "high",
       "surrounding_phrase": "fought with the Lamanites in the valley on the east of the river Sidon",
       "notes": ""
-    },
-    {
-      "mention_id": "alma_49_15_loc_02",
-      "reference_id": "alma_49_15",
-      "location_id": "river_sidon_crossing_zone",
-      "matched_text": "the valley",
-      "mention_role": "battlefield_marker",
-      "is_explicit": false,
-      "certainty": "medium",
-      "surrounding_phrase": "fought with the Lamanites in the valley on the east of the river Sidon",
-      "notes": "Normalized to the Sidon crossing battle corridor."
     },
     {
       "mention_id": "alma_50_11_loc_01",
@@ -9062,17 +8908,6 @@
       "is_explicit": true,
       "certainty": "high",
       "surrounding_phrase": "Antionum",
-      "notes": ""
-    },
-    {
-      "mention_id": "3_nephi_8_11_loc_03",
-      "reference_id": "3_nephi_8_11",
-      "location_id": "destruction_cataclysm_zone",
-      "matched_text": "the whole face of the land was changed",
-      "mention_role": "cataclysm_reference",
-      "is_explicit": true,
-      "certainty": "high",
-      "surrounding_phrase": "the whole face of the land was changed",
       "notes": ""
     },
     {

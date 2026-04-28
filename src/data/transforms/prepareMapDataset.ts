@@ -13,6 +13,13 @@ export interface PrepareMapDatasetOptions {
   basePath?: string;
 }
 
+const ALL_CHRONOLOGY_PERIODS: ChronologyPeriod[] = [
+  "jaredite",
+  "pre_christ",
+  "destruction",
+  "post_christ"
+];
+
 export async function prepareMapDataset(
   options: PrepareMapDatasetOptions
 ): Promise<GraphDataset> {
@@ -21,13 +28,15 @@ export async function prepareMapDataset(
   const coreData = await loadCoreData(basePath);
 
   // Chronology review is handled later in prepareRenderableMapDataset.
+  // Build the full graph first so an empty UI chronology selection can mean
+  // "show no periods" without starving the layout stage of all locations.
   const filteredData = applyToggles({
     locations: coreData.locations,
     spatialClaims: coreData.spatialClaims,
     events: coreData.events,
     eventSteps: coreData.eventSteps,
     toggles,
-    selectedChronology: [],
+    selectedChronology: ALL_CHRONOLOGY_PERIODS,
     selectedOverlayEventId
   });
 

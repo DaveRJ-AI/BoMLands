@@ -541,7 +541,6 @@
       "has_geographic_content": true,
       "location_mentions": [
         "wilderness_south_sidon",
-        "river_sidon_crossing_zone",
         "river_sidon"
       ],
       "direction_terms": [],
@@ -576,7 +575,6 @@
       "text_excerpt": "Those who fled from the battle departed into the wilderness and toward Manti.",
       "has_geographic_content": true,
       "location_mentions": [
-        "river_sidon_crossing_zone",
         "land_manti"
       ],
       "direction_terms": [],
@@ -1025,8 +1023,7 @@
       "text_excerpt": "Helaman's young men drew the enemy into the wilderness route away from Antiparah.",
       "has_geographic_content": true,
       "location_mentions": [
-        "city_antiparah",
-        "southern_wilderness_route"
+        "city_antiparah"
       ],
       "direction_terms": [],
       "relation_terms": [
@@ -1306,9 +1303,7 @@
       "reference_label": "3 Nephi 8:12",
       "text_excerpt": "The whole face of the land was changed.",
       "has_geographic_content": true,
-      "location_mentions": [
-        "destruction_cataclysm_zone"
-      ],
+      "location_mentions": [],
       "direction_terms": [],
       "relation_terms": [],
       "movement_terms": [
@@ -2455,7 +2450,6 @@
       "has_geographic_content": true,
       "location_mentions": [
         "city_judea",
-        "land_judea",
         "city_antiparah",
         "land_antiparah",
         "city_cumeni",
@@ -2495,8 +2489,7 @@
       "has_geographic_content": true,
       "location_mentions": [
         "land_zarahemla",
-        "land_manti",
-        "manti_supply_corridor"
+        "land_manti"
       ],
       "direction_terms": [],
       "relation_terms": [
@@ -2534,7 +2527,6 @@
       "location_mentions": [
         "city_antiparah",
         "land_antiparah",
-        "southern_wilderness_route",
         "city_cumeni",
         "land_cumeni",
         "land_manti"
@@ -3526,8 +3518,7 @@
       "has_geographic_content": true,
       "location_mentions": [
         "land_zarahemla",
-        "city_zarahemla",
-        "mulekite_zarahemla_region"
+        "city_zarahemla"
       ],
       "direction_terms": [],
       "relation_terms": [
@@ -3638,8 +3629,7 @@
       "text_excerpt": "King Benjamin thought it expedient that his sons should know concerning the land of Zarahemla and the people thereof.",
       "has_geographic_content": true,
       "location_mentions": [
-        "land_zarahemla",
-        "mulekite_zarahemla_region"
+        "land_zarahemla"
       ],
       "direction_terms": [],
       "relation_terms": [
@@ -4959,8 +4949,7 @@
       "has_geographic_content": true,
       "location_mentions": [
         "land_southward",
-        "land_northward",
-        "destruction_cataclysm_zone"
+        "land_northward"
       ],
       "direction_terms": [
         "southward",
@@ -7782,8 +7771,7 @@
       "text_excerpt": "Moroni met the Lamanites in the valley on the other side of the river Sidon and began to slay them.",
       "has_geographic_content": true,
       "location_mentions": [
-        "river_sidon",
-        "river_sidon_crossing_zone"
+        "river_sidon"
       ],
       "direction_terms": [],
       "relation_terms": [
@@ -7849,8 +7837,7 @@
       "text_excerpt": "The Lamanites were gathered in one body in the valley upon the bank by the river Sidon.",
       "has_geographic_content": true,
       "location_mentions": [
-        "river_sidon",
-        "river_sidon_crossing_zone"
+        "river_sidon"
       ],
       "direction_terms": [],
       "relation_terms": [
@@ -7885,8 +7872,7 @@
       "text_excerpt": "Zerahemnah saw Lehi on the east of the river Sidon and Moroni on the west of the river Sidon.",
       "has_geographic_content": true,
       "location_mentions": [
-        "river_sidon",
-        "river_sidon_crossing_zone"
+        "river_sidon"
       ],
       "direction_terms": [
         "east",
@@ -7920,8 +7906,7 @@
       "text_excerpt": "Lehi, captain over that city, was the same Lehi who fought with the Lamanites in the valley on the east of the river Sidon.",
       "has_geographic_content": true,
       "location_mentions": [
-        "river_sidon",
-        "river_sidon_crossing_zone"
+        "river_sidon"
       ],
       "direction_terms": [
         "east"

@@ -686,11 +686,11 @@
       },
       "notes": "Needs careful handling relative to other narrow-neck terminology.",
       "render_domain": "new_world_map",
-      "map_role": "gateway",
+      "map_role": "landmark_node",
       "visibility_tier": "tier_1_anchor",
       "certainty_level": "explicit",
       "default_render_state": "visible",
-      "classification_rationale": "Critical corridor/gateway node.",
+      "classification_rationale": "Critical corridor/gateway node rendered as a landmark anchor.",
       "region_scope": "New World"
     },
     {
@@ -820,48 +820,6 @@
       "region_scope": "Jaredite"
     },
     {
-      "id": "lamanite_regions_general",
-      "canonical_name": "Lamanite Regions (General)",
-      "display_name": "Lamanite Regions",
-      "entity_class": "location",
-      "feature_type": "region",
-      "named_status": "unnamed",
-      "root_name": "lamanite_regions",
-      "variant_forms": [
-        "among the Lamanites"
-      ],
-      "linked_entities": [
-        "land_nephi"
-      ],
-      "merge_group": "lamanite_regions",
-      "default_merge_behavior": "separate",
-      "first_reference": "Alma 17:8",
-      "status": "active",
-      "overlap_group": "lamanite_regions",
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ",
-        "status_by_period": {
-          "jaredite": "not_applicable",
-          "pre_christ": "active",
-          "destruction": "not_applicable",
-          "post_christ": "not_applicable"
-        }
-      },
-      "notes": "Abstract grouping used when specific lands are not identified.",
-      "render_domain": "new_world_map",
-      "map_role": "macro_region",
-      "visibility_tier": "tier_4_detail",
-      "certainty_level": "normalized",
-      "node_kind": "analytical_construct",
-      "evidence_status": "analytical_abstract",
-      "default_render_state": "detail_only",
-      "classification_rationale": "Interpretive aggregate region useful for broad context, but too abstract for default rendering.",
-      "region_scope": "New World"
-    },
-    {
       "id": "land_ishmael",
       "canonical_name": "Land of Ishmael",
       "display_name": "Ishmael",
@@ -977,50 +935,6 @@
       "region_scope": "New World"
     },
     {
-      "id": "multiple_lamanite_lands",
-      "canonical_name": "Multiple Lamanite Lands (Aggregated)",
-      "display_name": "Mission Field (Aggregate)",
-      "entity_class": "location",
-      "feature_type": "region",
-      "named_status": "abstract",
-      "root_name": "mission_field",
-      "variant_forms": [
-        "those lands"
-      ],
-      "linked_entities": [
-        "land_ishmael",
-        "land_nephi",
-        "land_midoni"
-      ],
-      "merge_group": "mission_field",
-      "default_merge_behavior": "separate",
-      "first_reference": "Alma 26:1",
-      "status": "active",
-      "overlap_group": "lamanite_regions",
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ",
-        "status_by_period": {
-          "jaredite": "not_applicable",
-          "pre_christ": "active",
-          "destruction": "not_applicable",
-          "post_christ": "not_applicable"
-        }
-      },
-      "notes": "Used for return-journey abstraction.",
-      "render_domain": "new_world_map",
-      "map_role": "macro_region",
-      "visibility_tier": "tier_4_detail",
-      "certainty_level": "normalized",
-      "node_kind": "analytical_construct",
-      "evidence_status": "analytical_abstract",
-      "default_render_state": "hidden",
-      "classification_rationale": "Aggregate abstraction for multiple Lamanite lands; useful analytically, not visually primary.",
-      "region_scope": "New World"
-    },
-    {
       "id": "land_jershon",
       "canonical_name": "Land of Jershon",
       "display_name": "Jershon",
@@ -1101,7 +1015,7 @@
     {
       "id": "wilderness_south_sidon",
       "canonical_name": "Wilderness South of Sidon",
-      "display_name": "South Sidon Wilderness",
+      "display_name": "South Wilderness",
       "entity_class": "location",
       "feature_type": "wilderness",
       "named_status": "unnamed",
@@ -1138,47 +1052,6 @@
       "certainty_level": "normalized",
       "default_render_state": "detail_only",
       "classification_rationale": "Supporting battlefield corridor.",
-      "region_scope": "New World"
-    },
-    {
-      "id": "river_sidon_crossing_zone",
-      "canonical_name": "River Sidon Crossing Zone",
-      "display_name": "Sidon Crossing Zone",
-      "entity_class": "location",
-      "feature_type": "route",
-      "named_status": "unnamed",
-      "root_name": "sidon_crossing_zone",
-      "variant_forms": [
-        "crossing of Sidon",
-        "crossing zone near Sidon"
-      ],
-      "linked_entities": [
-        "river_sidon"
-      ],
-      "merge_group": "sidon_crossing_zone",
-      "default_merge_behavior": "separate",
-      "first_reference": "Alma 43:27",
-      "status": "active",
-      "overlap_group": "sidon_corridor",
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ",
-        "status_by_period": {
-          "jaredite": "not_applicable",
-          "pre_christ": "active",
-          "destruction": "not_applicable",
-          "post_christ": "not_applicable"
-        }
-      },
-      "notes": "Battle and pursuit corridor.",
-      "render_domain": "new_world_map",
-      "map_role": "route_node",
-      "visibility_tier": "tier_4_detail",
-      "certainty_level": "inferred",
-      "default_render_state": "detail_only",
-      "classification_rationale": "Tactical crossing abstraction; detail-only.",
       "region_scope": "New World"
     },
     {
@@ -1652,49 +1525,6 @@
       "region_scope": "New World"
     },
     {
-      "id": "southern_wilderness_route",
-      "canonical_name": "Southern Wilderness Route",
-      "display_name": "Southern Wilderness Route",
-      "entity_class": "location",
-      "feature_type": "route",
-      "named_status": "unnamed",
-      "root_name": "southern_wilderness_route",
-      "variant_forms": [
-        "wilderness route",
-        "route into the wilderness"
-      ],
-      "linked_entities": [
-        "city_antiparah",
-        "city_cumeni",
-        "land_manti"
-      ],
-      "merge_group": "southern_wilderness_route",
-      "default_merge_behavior": "separate",
-      "first_reference": "Alma 56:31",
-      "status": "active",
-      "overlap_group": "southern_campaign_zone",
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ",
-        "status_by_period": {
-          "jaredite": "not_applicable",
-          "pre_christ": "active",
-          "destruction": "not_applicable",
-          "post_christ": "not_applicable"
-        }
-      },
-      "notes": "Decoy pursuit route.",
-      "render_domain": "new_world_map",
-      "map_role": "route_node",
-      "visibility_tier": "tier_4_detail",
-      "certainty_level": "inferred",
-      "default_render_state": "detail_only",
-      "classification_rationale": "Campaign movement logic only.",
-      "region_scope": "New World"
-    },
-    {
       "id": "land_gideon",
       "canonical_name": "Land of Gideon",
       "display_name": "Gideon",
@@ -1897,45 +1727,6 @@
       "certainty_level": "inferred",
       "default_render_state": "chronology_only",
       "classification_rationale": "Post-Christ civic continuation of Zarahemla, best shown only in chronology-aware post-Christ mode.",
-      "region_scope": "New World"
-    },
-    {
-      "id": "destruction_cataclysm_zone",
-      "canonical_name": "Destruction Cataclysm Zone",
-      "display_name": "Destruction Zone",
-      "entity_class": "location",
-      "feature_type": "region",
-      "named_status": "unnamed",
-      "root_name": "destruction_cataclysm_zone",
-      "variant_forms": [
-        "the whole face of the land was changed",
-        "cataclysmic destruction zone"
-      ],
-      "linked_entities": [],
-      "merge_group": "destruction_cataclysm_zone",
-      "default_merge_behavior": "separate",
-      "first_reference": "3 Nephi 8:12",
-      "status": "active",
-      "overlap_group": "cataclysm_zone",
-      "chronology": {
-        "periods": [
-          "destruction"
-        ],
-        "primary_period": "destruction",
-        "status_by_period": {
-          "jaredite": "not_applicable",
-          "pre_christ": "not_applicable",
-          "destruction": "active",
-          "post_christ": "legacy_reference"
-        }
-      },
-      "notes": "Macro-region used to model destruction-era geographic disruption.",
-      "render_domain": "new_world_map",
-      "map_role": "event_terrain",
-      "visibility_tier": "tier_2_major",
-      "certainty_level": "normalized",
-      "default_render_state": "chronology_only",
-      "classification_rationale": "Macro destruction overlay.",
       "region_scope": "New World"
     },
     {
@@ -2434,7 +2225,7 @@
     {
       "id": "east_wilderness_zarahemla",
       "canonical_name": "East Wilderness of Zarahemla",
-      "display_name": "East Wilderness of Zarahemla",
+      "display_name": "East Wilderness",
       "entity_class": "location",
       "feature_type": "wilderness",
       "named_status": "unnamed",
@@ -2841,89 +2632,6 @@
       "certainty_level": "explicit",
       "default_render_state": "detail_only",
       "classification_rationale": "Supporting southern theater land.",
-      "region_scope": "New World"
-    },
-    {
-      "id": "land_judea",
-      "canonical_name": "Land of Judea",
-      "display_name": "Judea",
-      "entity_class": "location",
-      "feature_type": "land",
-      "named_status": "named",
-      "root_name": "judea_land",
-      "variant_forms": [
-        "land of Judea",
-        "Judea"
-      ],
-      "linked_entities": [
-        "city_judea"
-      ],
-      "merge_group": "judea",
-      "default_merge_behavior": "separate",
-      "first_reference": "Alma 56:14",
-      "status": "active",
-      "overlap_group": "southern_campaign_zone",
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ",
-        "status_by_period": {
-          "jaredite": "not_applicable",
-          "pre_christ": "active",
-          "destruction": "not_applicable",
-          "post_christ": "not_applicable"
-        }
-      },
-      "notes": "Separate land node preserved for southern campaign theater.",
-      "render_domain": "new_world_map",
-      "map_role": "region_underlay",
-      "visibility_tier": "tier_3_supporting",
-      "certainty_level": "explicit",
-      "default_render_state": "detail_only",
-      "classification_rationale": "Supporting southern theater land.",
-      "region_scope": "New World"
-    },
-    {
-      "id": "manti_supply_corridor",
-      "canonical_name": "Manti Supply Corridor",
-      "display_name": "Manti Supply Corridor",
-      "entity_class": "location",
-      "feature_type": "route",
-      "named_status": "unnamed",
-      "root_name": "manti_supply_corridor",
-      "variant_forms": [
-        "way from the land of Zarahemla and from the land round about unto the land of Manti",
-        "supply corridor to Manti"
-      ],
-      "linked_entities": [
-        "land_manti",
-        "land_zarahemla"
-      ],
-      "merge_group": "manti_supply_corridor",
-      "default_merge_behavior": "separate",
-      "first_reference": "Alma 56:25",
-      "status": "active",
-      "overlap_group": "southern_campaign_zone",
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ",
-        "status_by_period": {
-          "jaredite": "not_applicable",
-          "pre_christ": "active",
-          "destruction": "not_applicable",
-          "post_christ": "not_applicable"
-        }
-      },
-      "notes": "Operational route linking Zarahemla support to Manti theater.",
-      "render_domain": "new_world_map",
-      "map_role": "route_node",
-      "visibility_tier": "tier_4_detail",
-      "certainty_level": "normalized",
-      "default_render_state": "detail_only",
-      "classification_rationale": "Logistics overlay, not base object.",
       "region_scope": "New World"
     },
     {
@@ -3951,48 +3659,6 @@
       "certainty_level": "normalized",
       "default_render_state": "detail_only",
       "classification_rationale": "Story landmark; detail-level.",
-      "region_scope": "New World"
-    },
-    {
-      "id": "mulekite_zarahemla_region",
-      "canonical_name": "Mulekite Zarahemla Region",
-      "display_name": "Mulekite Zarahemla Region",
-      "entity_class": "location",
-      "feature_type": "region",
-      "named_status": "abstract",
-      "root_name": "mulekite_zarahemla_region",
-      "variant_forms": [
-        "people of Zarahemla",
-        "land discovered by Mosiah"
-      ],
-      "linked_entities": [
-        "land_zarahemla",
-        "city_zarahemla"
-      ],
-      "merge_group": "mulekite_zarahemla_region",
-      "default_merge_behavior": "separate",
-      "first_reference": "Omni 1:14",
-      "status": "active",
-      "overlap_group": "zarahemla_zone",
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ",
-        "status_by_period": {
-          "jaredite": "legacy_reference",
-          "pre_christ": "active",
-          "destruction": "legacy_reference",
-          "post_christ": "legacy_reference"
-        }
-      },
-      "notes": "Abstract continuity layer for Zarahemla before and during Mosiah's arrival.",
-      "render_domain": "new_world_map",
-      "map_role": "macro_region",
-      "visibility_tier": "tier_4_detail",
-      "certainty_level": "normalized",
-      "default_render_state": "detail_only",
-      "classification_rationale": "Interpretive continuity layer; hide by default.",
       "region_scope": "New World"
     },
     {

@@ -16,11 +16,6 @@ export type EventOverlayMode =
   | "migration"
   | "all";
 
-export type CampaignRenderMode =
-  | "point_to_point"
-  | "inferred_route"
-  | "sequence_only";
-
 export type ChronologyPeriod =
   | "jaredite"
   | "pre_christ"
@@ -42,7 +37,6 @@ export interface ToggleState {
   border_claims_mode: IncludeExcludeMode;
   travel_edges_mode: IncludeExcludeMode;
   event_overlay_mode: EventOverlayMode;
-  campaign_render_mode: CampaignRenderMode;
 }
 
 export interface AppConfig {

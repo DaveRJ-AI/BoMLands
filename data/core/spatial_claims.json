@@ -464,65 +464,6 @@
       "notes": "Strategic pressure implies proximity or operational adjacency."
     },
     {
-      "claim_id": "claim_alma_43_22_01",
-      "reference_id": "alma_43_22",
-      "subject_location_id": "wilderness_south_sidon",
-      "object_location_id": "river_sidon",
-      "claim_type": "south_of",
-      "claim_basis": "explicit",
-      "source_phrase": "wilderness south of Sidon",
-      "toggle_sensitivity": [],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "high",
-      "notes": ""
-    },
-    {
-      "claim_id": "claim_alma_43_27_01",
-      "reference_id": "alma_43_27",
-      "subject_location_id": "river_sidon_crossing_zone",
-      "object_location_id": "river_sidon",
-      "claim_type": "within",
-      "claim_basis": "strong_inference",
-      "source_phrase": "toward the river crossing area",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Crossing zone treated as tactical subset of river corridor."
-    },
-    {
-      "claim_id": "claim_alma_44_22_01",
-      "reference_id": "alma_44_22",
-      "subject_location_id": "land_manti",
-      "object_location_id": "river_sidon_crossing_zone",
-      "claim_type": "route_to",
-      "claim_basis": "strong_inference",
-      "source_phrase": "fled ... toward Manti",
-      "toggle_sensitivity": [
-        "inference_mode",
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Retreat path relation."
-    },
-    {
       "claim_id": "claim_alma_48_2_01",
       "reference_id": "alma_48_2",
       "subject_location_id": "city_nephihah",
@@ -781,26 +722,6 @@
       "notes": ""
     },
     {
-      "claim_id": "claim_alma_56_31_01",
-      "reference_id": "alma_56_31",
-      "subject_location_id": "southern_wilderness_route",
-      "object_location_id": "city_antiparah",
-      "claim_type": "route_to",
-      "claim_basis": "explicit",
-      "source_phrase": "into the wilderness route away from Antiparah",
-      "toggle_sensitivity": [
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "high",
-      "notes": ""
-    },
-    {
       "claim_id": "claim_alma_57_18_01",
       "reference_id": "alma_57_18",
       "subject_location_id": "city_cumeni",
@@ -921,86 +842,6 @@
       },
       "confidence": "high",
       "notes": "Represents terrain covering former city location."
-    },
-    {
-      "claim_id": "claim_3_nephi_8_12_01",
-      "reference_id": "3_nephi_8_12",
-      "subject_location_id": "destruction_cataclysm_zone",
-      "object_location_id": "city_zarahemla_destruction",
-      "claim_type": "contains",
-      "claim_basis": "strong_inference",
-      "source_phrase": "the whole face of the land was changed",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "destruction"
-        ],
-        "primary_period": "destruction"
-      },
-      "confidence": "medium",
-      "notes": "Macro-region claim for destruction rendering."
-    },
-    {
-      "claim_id": "claim_3_nephi_8_12_02",
-      "reference_id": "3_nephi_8_12",
-      "subject_location_id": "destruction_cataclysm_zone",
-      "object_location_id": "city_moroni_destruction",
-      "claim_type": "contains",
-      "claim_basis": "strong_inference",
-      "source_phrase": "the whole face of the land was changed",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "destruction"
-        ],
-        "primary_period": "destruction"
-      },
-      "confidence": "medium",
-      "notes": ""
-    },
-    {
-      "claim_id": "claim_3_nephi_8_12_03",
-      "reference_id": "3_nephi_8_12",
-      "subject_location_id": "destruction_cataclysm_zone",
-      "object_location_id": "city_moronihah_destruction",
-      "claim_type": "contains",
-      "claim_basis": "strong_inference",
-      "source_phrase": "the whole face of the land was changed",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "destruction"
-        ],
-        "primary_period": "destruction"
-      },
-      "confidence": "medium",
-      "notes": ""
-    },
-    {
-      "claim_id": "claim_3_nephi_9_9_01",
-      "reference_id": "3_nephi_9_9",
-      "subject_location_id": "city_jacobugath_destruction",
-      "object_location_id": "destruction_cataclysm_zone",
-      "claim_type": "within",
-      "claim_basis": "strong_inference",
-      "source_phrase": "the city of Jacobugath have I caused to be burned",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "destruction"
-        ],
-        "primary_period": "destruction"
-      },
-      "confidence": "medium",
-      "notes": ""
     },
     {
       "claim_id": "claim_3_nephi_11_1_01",
@@ -1349,27 +1190,6 @@
       },
       "confidence": "high",
       "notes": ""
-    },
-    {
-      "claim_id": "claim_alma_2_27_35_01",
-      "reference_id": "alma_2_27_35",
-      "subject_location_id": "river_sidon",
-      "object_location_id": "river_sidon_crossing_zone",
-      "claim_type": "contains",
-      "claim_basis": "strong_inference",
-      "source_phrase": "as they were crossing the river Sidon",
-      "toggle_sensitivity": [
-        "inference_mode",
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Reinforces crossing-zone abstraction already in core."
     },
     {
       "claim_id": "claim_alma_2_27_35_02",
@@ -2020,148 +1840,6 @@
       },
       "confidence": "medium",
       "notes": "Grouped southern theater witness."
-    },
-    {
-      "claim_id": "claim_alma_56_14_16_02",
-      "reference_id": "alma_56_14_16",
-      "subject_location_id": "city_antiparah",
-      "object_location_id": "city_cumeni",
-      "claim_type": "campaign_cluster_with",
-      "claim_basis": "strong_inference",
-      "source_phrase": "Judea, Antiparah, Cumeni, and Manti",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Grouped southern theater witness."
-    },
-    {
-      "claim_id": "claim_alma_56_14_16_03",
-      "reference_id": "alma_56_14_16",
-      "subject_location_id": "city_cumeni",
-      "object_location_id": "land_manti",
-      "claim_type": "campaign_cluster_with",
-      "claim_basis": "strong_inference",
-      "source_phrase": "Judea, Antiparah, Cumeni, and Manti",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Grouped southern theater witness."
-    },
-    {
-      "claim_id": "claim_alma_56_25_01",
-      "reference_id": "alma_56_25",
-      "subject_location_id": "manti_supply_corridor",
-      "object_location_id": "land_zarahemla",
-      "claim_type": "route_from",
-      "claim_basis": "explicit",
-      "source_phrase": "by way of the land of Zarahemla",
-      "toggle_sensitivity": [
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "high",
-      "notes": "Operational support line begins in Zarahemla sphere."
-    },
-    {
-      "claim_id": "claim_alma_56_25_02",
-      "reference_id": "alma_56_25",
-      "subject_location_id": "manti_supply_corridor",
-      "object_location_id": "land_manti",
-      "claim_type": "route_to",
-      "claim_basis": "explicit",
-      "source_phrase": "unto the land of Manti",
-      "toggle_sensitivity": [
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "high",
-      "notes": "Operational support line ends in Manti theater."
-    },
-    {
-      "claim_id": "claim_alma_56_31_36_01",
-      "reference_id": "alma_56_31_36",
-      "subject_location_id": "southern_wilderness_route",
-      "object_location_id": "city_antiparah",
-      "claim_type": "route_from",
-      "claim_basis": "explicit",
-      "source_phrase": "away from Antiparah into the wilderness",
-      "toggle_sensitivity": [
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "high",
-      "notes": ""
-    },
-    {
-      "claim_id": "claim_alma_56_31_36_02",
-      "reference_id": "alma_56_31_36",
-      "subject_location_id": "southern_wilderness_route",
-      "object_location_id": "city_cumeni",
-      "claim_type": "return_axis_to",
-      "claim_basis": "strong_inference",
-      "source_phrase": "path back led toward Cumeni",
-      "toggle_sensitivity": [
-        "inference_mode",
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Campaign return path."
-    },
-    {
-      "claim_id": "claim_alma_56_31_36_03",
-      "reference_id": "alma_56_31_36",
-      "subject_location_id": "southern_wilderness_route",
-      "object_location_id": "land_manti",
-      "claim_type": "return_axis_to",
-      "claim_basis": "strong_inference",
-      "source_phrase": "and Manti",
-      "toggle_sensitivity": [
-        "inference_mode",
-        "travel_edges_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Campaign return path reaches broader Manti theater."
     },
     {
       "claim_id": "claim_alma_57_18_20_01",
@@ -2909,24 +2587,6 @@
       },
       "confidence": "high",
       "notes": "DOWN retained as toggle-sensitive evidence."
-    },
-    {
-      "claim_id": "claim_omni_1_14_19_01",
-      "reference_id": "omni_1_14_19",
-      "subject_location_id": "mulekite_zarahemla_region",
-      "object_location_id": "land_zarahemla",
-      "claim_type": "within",
-      "claim_basis": "explicit",
-      "source_phrase": "people of Zarahemla ... in the land of Zarahemla",
-      "toggle_sensitivity": [],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "high",
-      "notes": "Continuity layer for Zarahemla population."
     },
     {
       "claim_id": "claim_omni_1_27_30_01",
@@ -3738,26 +3398,6 @@
       },
       "confidence": "medium",
       "notes": "The land named Jerusalem joins Mormon's borders; the city is therefore treated as near that frontier."
-    },
-    {
-      "claim_id": "claim_alma_56_14_16_04",
-      "reference_id": "alma_56_14_16",
-      "subject_location_id": "city_judea",
-      "object_location_id": "land_judea",
-      "claim_type": "within",
-      "claim_basis": "strong_inference",
-      "source_phrase": "arrived at the city of Judea ... that part of the land",
-      "toggle_sensitivity": [
-        "inference_mode"
-      ],
-      "chronology": {
-        "periods": [
-          "pre_christ"
-        ],
-        "primary_period": "pre_christ"
-      },
-      "confidence": "medium",
-      "notes": "Same-name land overlay preserved for the southern theater."
     },
     {
       "claim_id": "claim_alma_56_14_16_05",

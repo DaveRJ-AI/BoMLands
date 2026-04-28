@@ -6,7 +6,7 @@ export function filterClaimsByChronology(
   selectedPeriods: ChronologyPeriod[]
 ): SpatialClaim[] {
   if (selectedPeriods.length === 0) {
-    return spatialClaims;
+    return [];
   }
 
   return spatialClaims.filter((claim) =>
